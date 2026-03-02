@@ -1,970 +1,1154 @@
 <!doctype html>
 <html lang="en" data-theme="auto">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="color-scheme" content="dark light" />
-  <title>Isabella Cristina Bertschi, PhD — CV</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Isabella Cristina Bertschi, PhD — CV</title>
 
-  <style>
-    :root{
-      --max: 1120px;
-      --focus: 0 0 0 3px rgba(59,130,246,.35);
+    <style>
+        :root{
+            --max: 1120px;
+            --focus: 0 0 0 3px rgba(59,130,246,.35);
 
-      /* Dark defaults */
-      --bg: #07121f;
-      --surface: rgba(10, 22, 36, .76);
-      --surface2: rgba(10, 22, 36, .52);
-      --text: #eaf1fb;
-      --muted: #b6c6db;
-      --muted2: #92a8c5;
+            /* Dark defaults */
+            --bg: #07121f;
+            --surface: rgba(10, 22, 36, .76);
+            --surface2: rgba(10, 22, 36, .52);
+            --text: #eaf1fb;
+            --muted: #b6c6db;
+            --muted2: #92a8c5;
 
-      --line: rgba(255,255,255,.14);
-      --hair: rgba(255,255,255,.10);
-      --shadow: 0 16px 44px rgba(0,0,0,.40);
+            --line: rgba(255,255,255,.14);
+            --hair: rgba(255,255,255,.10);
+            --shadow: 0 16px 44px rgba(0,0,0,.40);
 
-      --accent: #3b82f6;  /* blue */
-      --accent2:#14b8a6;  /* teal */
-      --accent3:#f59e0b;  /* amber */
+            --accent: #3b82f6;  /* blue */
+            --accent2:#14b8a6;  /* teal */
+            --accent3:#f59e0b;  /* amber */
 
-      --chipBg: rgba(255,255,255,.06);
-      --chipText: #d7e2f2;
+            --chipBg: rgba(255,255,255,.06);
+            --chipText: #d7e2f2;
 
-      --link: #dfeaff;
-      --linkHover:#ffffff;
+            --link: #dfeaff;
+            --linkHover:#ffffff;
 
-      --timelineLine: rgba(255,255,255,.16);
-      --dotA: rgba(20,184,166,.95);
-      --dotB: rgba(59,130,246,.95);
-      --dotC: rgba(245,158,11,.92);
+            --timelineLine: rgba(255,255,255,.16);
+            --dotA: rgba(20,184,166,.95);
+            --dotB: rgba(59,130,246,.95);
+            --dotC: rgba(245,158,11,.92);
 
-      --pillBg: rgba(255,255,255,.06);
+            --pillBg: rgba(255,255,255,.06);
 
-      --hover: rgba(255,255,255,.06);
-      --elev: translateY(-1px);
-      --listGlyph: "›";
+            --hover: rgba(255,255,255,.06);
+            --elev: translateY(-1px);
+            --listGlyph: "›";
 
-      /* IMPORTANT: opaque popup surfaces (no transparency) */
-      --popupBg: #0b1624;
-      --popupBorder: rgba(255,255,255,.18);
-      --popupShadow: 0 18px 55px rgba(0,0,0,.48);
-    }
+            /* IMPORTANT: opaque popup surfaces (no transparency) */
+            --popupBg: #0b1624;
+            --popupBorder: rgba(255,255,255,.18);
+            --popupShadow: 0 18px 55px rgba(0,0,0,.48);
+        }
 
-    html[data-theme="light"]{
-      --bg: #f7f9fc;
-      --surface: rgba(255,255,255,.80);
-      --surface2: rgba(255,255,255,.60);
-      --text: #0b1220;
-      --muted: #2c3e56;
-      --muted2:#3f5878;
+        html[data-theme="light"]{
+            --bg: #f7f9fc;
+            --surface: rgba(255,255,255,.80);
+            --surface2: rgba(255,255,255,.60);
+            --text: #0b1220;
+            --muted: #2c3e56;
+            --muted2:#3f5878;
 
-      --line: rgba(10,20,35,.14);
-      --hair: rgba(10,20,35,.10);
-      --shadow: 0 16px 40px rgba(10,20,35,.10);
+            --line: rgba(10,20,35,.14);
+            --hair: rgba(10,20,35,.10);
+            --shadow: 0 16px 40px rgba(10,20,35,.10);
 
-      --chipBg: rgba(10,20,35,.06);
-      --chipText:#0b1220;
+            --chipBg: rgba(10,20,35,.06);
+            --chipText:#0b1220;
 
-      --link:#0b2a64;
-      --linkHover:#07121f;
+            --link:#0b2a64;
+            --linkHover:#07121f;
 
-      --hover: color-mix(in srgb, var(--accent) 10%, transparent);
-      --timelineLine: rgba(10,20,35,.16);
-      --pillBg: rgba(10,20,35,.06);
+            --hover: color-mix(in srgb, var(--accent) 10%, transparent);
+            --timelineLine: rgba(10,20,35,.16);
+            --pillBg: rgba(10,20,35,.06);
 
-      /* IMPORTANT: opaque popup surfaces (no transparency) */
-      --popupBg: #ffffff;
-      --popupBorder: rgba(10,20,35,.18);
-      --popupShadow: 0 18px 50px rgba(10,20,35,.14);
-    }
+            /* IMPORTANT: opaque popup surfaces (no transparency) */
+            --popupBg: #ffffff;
+            --popupBorder: rgba(10,20,35,.18);
+            --popupShadow: 0 18px 50px rgba(10,20,35,.14);
+        }
 
-    @media (prefers-color-scheme: light){
-      html[data-theme="auto"]{
-        --bg: #f7f9fc;
-        --surface: rgba(255,255,255,.80);
-        --surface2: rgba(255,255,255,.60);
-        --text: #0b1220;
-        --muted: #2c3e56;
-        --muted2:#3f5878;
+        @media (prefers-color-scheme: light){
+            html[data-theme="auto"]{
+                --bg: #f7f9fc;
+                --surface: rgba(255,255,255,.80);
+                --surface2: rgba(255,255,255,.60);
+                --text: #0b1220;
+                --muted: #2c3e56;
+                --muted2:#3f5878;
 
-        --line: rgba(10,20,35,.14);
-        --hair: rgba(10,20,35,.10);
-        --shadow: 0 16px 40px rgba(10,20,35,.10);
+                --line: rgba(10,20,35,.14);
+                --hair: rgba(10,20,35,.10);
+                --shadow: 0 16px 40px rgba(10,20,35,.10);
 
-        --chipBg: rgba(10,20,35,.06);
-        --chipText:#0b1220;
+                --chipBg: rgba(10,20,35,.06);
+                --chipText:#0b1220;
 
-        --link:#0b2a64;
-        --linkHover:#07121f;
+                --link:#0b2a64;
+                --linkHover:#07121f;
 
-        --hover: color-mix(in srgb, var(--accent) 10%, transparent);
-        --timelineLine: rgba(10,20,35,.16);
-        --pillBg: rgba(10,20,35,.06);
+                --hover: color-mix(in srgb, var(--accent) 10%, transparent);
+                --timelineLine: rgba(10,20,35,.16);
+                --pillBg: rgba(10,20,35,.06);
 
-        --popupBg: #ffffff;
-        --popupBorder: rgba(10,20,35,.18);
-        --popupShadow: 0 18px 50px rgba(10,20,35,.14);
-      }
-    }
+                --popupBg: #ffffff;
+                --popupBorder: rgba(10,20,35,.18);
+                --popupShadow: 0 18px 50px rgba(10,20,35,.14);
+            }
+        }
 
-    *{ box-sizing:border-box; }
-    html, body{ height:100%; }
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color: var(--text);
-      background:
-        radial-gradient(1200px 760px at 15% 10%, color-mix(in srgb, var(--accent) 22%, transparent) 0%, transparent 58%),
-        radial-gradient(980px 660px at 84% 22%, color-mix(in srgb, var(--accent2) 18%, transparent) 0%, transparent 60%),
-        radial-gradient(900px 620px at 70% 82%, color-mix(in srgb, var(--accent3) 14%, transparent) 0%, transparent 62%),
-        linear-gradient(180deg, var(--bg), color-mix(in srgb, var(--bg) 85%, #000 15%));
-      overflow-x:hidden;
-      line-height:1.55;
-      letter-spacing:.1px;
-    }
+        *{ box-sizing:border-box; }
+        html, body{ height:100%; }
+        body{
+            margin:0;
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+            color: var(--text);
+            background:
+                    radial-gradient(1200px 760px at 15% 10%, color-mix(in srgb, var(--accent) 22%, transparent) 0%, transparent 58%),
+                    radial-gradient(980px 660px at 84% 22%, color-mix(in srgb, var(--accent2) 18%, transparent) 0%, transparent 60%),
+                    radial-gradient(900px 620px at 70% 82%, color-mix(in srgb, var(--accent3) 14%, transparent) 0%, transparent 62%),
+                    linear-gradient(180deg, var(--bg), color-mix(in srgb, var(--bg) 85%, #000 15%));
+            overflow-x:hidden;
+            line-height:1.55;
+            letter-spacing:.1px;
+        }
 
-    #net{
-      position:fixed;
-      inset:0;
-      width:100%;
-      height:100%;
-      z-index:-1;
-      opacity:.60;
-      pointer-events:none;
-    }
+        #net{
+            position:fixed;
+            inset:0;
+            width:100%;
+            height:100%;
+            z-index:-1;
+            opacity:.60;
+            pointer-events:none;
+        }
 
-    .skip-link{
-      position:absolute;
-      left:10px;
-      top:10px;
-      padding:10px 12px;
-      background: var(--popupBg);
-      color: var(--text);
-      text-decoration:none;
-      transform: translateY(-140%);
-      transition: transform .2s ease;
-      z-index: 999;
-      border: 1px solid var(--popupBorder);
-      box-shadow: var(--popupShadow);
-    }
-    .skip-link:focus{ transform: translateY(0); outline:none; box-shadow: var(--focus); }
+        .skip-link{
+            position:absolute;
+            left:10px;
+            top:10px;
+            padding:10px 12px;
+            background: var(--popupBg);
+            color: var(--text);
+            text-decoration:none;
+            transform: translateY(-140%);
+            transition: transform .2s ease;
+            z-index: 999;
+            border: 1px solid var(--popupBorder);
+            box-shadow: var(--popupShadow);
+        }
+        .skip-link:focus{ transform: translateY(0); outline:none; box-shadow: var(--focus); }
 
-    /* ======================
-       TOPBAR (responsive grid)
-       ====================== */
-    .topbar{
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: color-mix(in srgb, var(--surface) 90%, transparent);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--hair);
-    }
+        /* ======================
+           TOPBAR (responsive grid)
+           ====================== */
+        .topbar{
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: color-mix(in srgb, var(--surface) 90%, transparent);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--hair);
+        }
 
-    .topbar-inner{
-      max-width: var(--max);
-      margin:0 auto;
-      padding: 10px 16px;
-      display:grid;
-      grid-template-columns: 1fr minmax(320px, 1.3fr) auto;
-      grid-template-areas: "brand search actions";
-      gap: 10px;
-      align-items:center;
-    }
+        .topbar-inner{
+            max-width: var(--max);
+            margin:0 auto;
+            padding: 10px 16px;
+            display:grid;
+            grid-template-columns: 1fr minmax(320px, 1.3fr) auto;
+            grid-template-areas: "brand search actions";
+            gap: 10px;
+            align-items:center;
+        }
 
-    .brand{ grid-area: brand; display:flex; align-items:center; gap:10px; min-width: 0; }
-    .brand .mini{ width:10px; height:10px; background: linear-gradient(135deg, var(--accent), var(--accent2)); }
-    .brand .title{
-      font-weight: 760;
-      letter-spacing:.2px;
-      font-size: .98rem;
-      white-space: nowrap;
-      overflow:hidden;
-      text-overflow: ellipsis;
-      max-width: 320px;
-    }
+        .brand{ grid-area: brand; display:flex; align-items:center; gap:10px; min-width: 0; }
+        .brand .mini{ width:10px; height:10px; background: linear-gradient(135deg, var(--accent), var(--accent2)); }
+        .brand .title{
+            font-weight: 760;
+            letter-spacing:.2px;
+            font-size: .98rem;
+            white-space: nowrap;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            max-width: 320px;
+        }
 
-    .search{ grid-area: search; display:flex; gap:8px; align-items:center; min-width: 0; position:relative; }
-    .search input{
-      flex: 1 1 auto;
-      min-width: 0;
-      border: 1px solid var(--line);
-      background: var(--surface2);
-      color: var(--text);
-      padding: 10px 10px;
-      font-size: .98rem;
-      outline:none;
-    }
-    .search input:focus{ box-shadow: var(--focus); }
+        .search{ grid-area: search; display:flex; gap:8px; align-items:center; min-width: 0; position:relative; }
+        .search input{
+            flex: 1 1 auto;
+            min-width: 0;
+            border: 1px solid var(--line);
+            background: var(--surface2);
+            color: var(--text);
+            padding: 10px 10px;
+            font-size: .98rem;
+            outline:none;
+        }
+        .search input:focus{ box-shadow: var(--focus); }
 
-    .actions{ grid-area: actions; display:flex; gap:8px; align-items:center; justify-content:flex-end; }
+        .actions{ grid-area: actions; display:flex; gap:8px; align-items:center; justify-content:flex-end; }
 
-    .btn{
-      appearance:none;
-      border: 1px solid var(--line);
-      background: var(--surface2);
-      color: var(--text);
-      padding: 9px 10px;
-      font-size: .95rem;
-      cursor:pointer;
-      transition: transform .12s ease, background .12s ease, border-color .12s ease;
-      white-space: nowrap;
-    }
-    .btn:hover{ background: color-mix(in srgb, var(--surface2) 85%, transparent); transform: var(--elev); }
-    .btn:active{ transform: translateY(1px); }
-    .btn:focus{ outline:none; box-shadow: var(--focus); }
+        .btn{
+            appearance:none;
+            border: 1px solid var(--line);
+            background: var(--surface2);
+            color: var(--text);
+            padding: 9px 10px;
+            font-size: .95rem;
+            cursor:pointer;
+            transition: transform .12s ease, background .12s ease, border-color .12s ease;
+            white-space: nowrap;
+        }
+        .btn:hover{ background: color-mix(in srgb, var(--surface2) 85%, transparent); transform: var(--elev); }
+        .btn:active{ transform: translateY(1px); }
+        .btn:focus{ outline:none; box-shadow: var(--focus); }
 
-    .iconbtn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      width: 42px;
-      height: 42px;
-      padding:0;
-    }
-    .icon{ width: 18px; height: 18px; display:block; fill: currentColor; }
+        .iconbtn{
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            width: 42px;
+            height: 42px;
+            padding:0;
+        }
+        .icon{ width: 18px; height: 18px; display:block; fill: currentColor; }
 
-    /* Hamburger */
-    .hamburger{ display:none; }
+        /* Hamburger */
+        .hamburger{ display:none; }
 
-    /* OPAQUE popups */
-    .search-results{
-      position:absolute;
-      left: 0;
-      right: 0;
-      top: calc(100% + 8px);
-      width: 100%;
-      border: 1px solid var(--popupBorder);
-      background: var(--popupBg);            /* opaque */
-      box-shadow: var(--popupShadow);
-      display:none;
-      max-height: 280px;
-      overflow:auto;
-      z-index: 60;
-    }
-    .search-results[aria-hidden="false"]{ display:block; }
+        /* OPAQUE popups */
+        .search-results{
+            position:absolute;
+            left: 0;
+            right: 0;
+            top: calc(100% + 8px);
+            width: 100%;
+            border: 1px solid var(--popupBorder);
+            background: var(--popupBg);            /* opaque */
+            box-shadow: var(--popupShadow);
+            display:none;
+            max-height: 280px;
+            overflow:auto;
+            z-index: 60;
+        }
+        .search-results[aria-hidden="false"]{ display:block; }
 
-    .result{
-      border-bottom: 1px solid color-mix(in srgb, var(--popupBorder) 70%, transparent);
-      padding: 10px 10px;
-      cursor:pointer;
-      transition: background .12s ease;
-    }
-    .result:hover{ background: var(--hover); }
-    .result:last-child{ border-bottom:none; }
-    .r-title{ font-weight: 700; }
-    .r-snippet{ color: var(--muted); font-size: .92rem; margin-top: 2px; }
+        .result{
+            border-bottom: 1px solid color-mix(in srgb, var(--popupBorder) 70%, transparent);
+            padding: 10px 10px;
+            cursor:pointer;
+            transition: background .12s ease;
+        }
+        .result:hover{ background: var(--hover); }
+        .result:last-child{ border-bottom:none; }
+        .r-title{ font-weight: 700; }
+        .r-snippet{ color: var(--muted); font-size: .92rem; margin-top: 2px; }
 
-    /* Dropdown (opaque) */
-    .dropdown{ position: relative; }
-    .menu{
-      position:absolute;
-      right:0;
-      top: calc(100% + 8px);
-      min-width: 220px;
-      background: var(--popupBg);           /* opaque */
-      border: 1px solid var(--popupBorder);
-      box-shadow: var(--popupShadow);
-      display:none;
-      z-index: 70;
-    }
-    .menu[aria-hidden="false"]{ display:block; }
-    .menu button{
-      width:100%;
-      text-align:left;
-      border:0;
-      border-bottom: 1px solid color-mix(in srgb, var(--popupBorder) 70%, transparent);
-      background: transparent;
-      color: var(--text);
-      padding: 10px 10px;
-      cursor:pointer;
-      font-size: .95rem;
-      transition: background .12s ease;
-    }
-    .menu button:hover{ background: var(--hover); }
-    .menu button:last-child{ border-bottom:0; }
+        /* Dropdown (opaque) */
+        .dropdown{ position: relative; }
+        .menu{
+            position:absolute;
+            right:0;
+            top: calc(100% + 8px);
+            min-width: 220px;
+            background: var(--popupBg);           /* opaque */
+            border: 1px solid var(--popupBorder);
+            box-shadow: var(--popupShadow);
+            display:none;
+            z-index: 70;
+        }
+        .menu[aria-hidden="false"]{ display:block; }
+        .menu button{
+            width:100%;
+            text-align:left;
+            border:0;
+            border-bottom: 1px solid color-mix(in srgb, var(--popupBorder) 70%, transparent);
+            background: transparent;
+            color: var(--text);
+            padding: 10px 10px;
+            cursor:pointer;
+            font-size: .95rem;
+            transition: background .12s ease;
+        }
+        .menu button:hover{ background: var(--hover); }
+        .menu button:last-child{ border-bottom:0; }
 
-    /* Mobile drawer */
-    .mobile-drawer{
-      display:none;
-      border-top: 1px solid var(--hair);
-      background: color-mix(in srgb, var(--surface) 92%, transparent);
-    }
-    .mobile-drawer-inner{
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 10px 16px 14px;
-      display:flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+        /* Mobile drawer */
+        .mobile-drawer{
+            display:none;
+            border-top: 1px solid var(--hair);
+            background: color-mix(in srgb, var(--surface) 92%, transparent);
+        }
+        .mobile-drawer-inner{
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 10px 16px 14px;
+            display:flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
-    .toc{ display:flex; flex-wrap: wrap; gap: 8px; }
-    .toc a{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding: 9px 10px;
-      border: 1px solid var(--line);
-      background: var(--surface2);
-      color: var(--text);
-      text-decoration:none;
-      font-size: .95rem;
-      transition: transform .12s ease, background .12s ease;
-    }
-    .toc a:hover{ background: color-mix(in srgb, var(--surface2) 85%, transparent); transform: var(--elev); }
-    .toc a:focus{ outline:none; box-shadow: var(--focus); }
+        .toc{ display:flex; flex-wrap: wrap; gap: 8px; }
+        .toc a{
+            display:inline-flex;
+            align-items:center;
+            gap:8px;
+            padding: 9px 10px;
+            border: 1px solid var(--line);
+            background: var(--surface2);
+            color: var(--text);
+            text-decoration:none;
+            font-size: .95rem;
+            transition: transform .12s ease, background .12s ease;
+        }
+        .toc a:hover{ background: color-mix(in srgb, var(--surface2) 85%, transparent); transform: var(--elev); }
+        .toc a:focus{ outline:none; box-shadow: var(--focus); }
 
-    /* RESPONSIVE FIX: grid stacks cleanly */
-    @media (max-width: 920px){
-      .topbar-inner{
-        grid-template-columns: 1fr auto;
-        grid-template-areas:
+        /* RESPONSIVE FIX: grid stacks cleanly */
+        @media (max-width: 920px){
+            .topbar-inner{
+                grid-template-columns: 1fr auto;
+                grid-template-areas:
           "brand actions"
           "search search";
-      }
-      .brand .title{ max-width: 220px; }
-      .search-results{ left: 0; right: 0; }
-    }
+            }
+            .brand .title{ max-width: 220px; }
+            .search-results{ left: 0; right: 0; }
+        }
 
-    @media (max-width: 720px){
-      .hamburger{ display:inline-flex; }
-      .brand .title{ max-width: 160px; }
-      /* compact prev/next buttons on small screens */
-      .btnPrevText, .btnNextText{ display:none; }
-    }
+        @media (max-width: 720px){
+            .hamburger{ display:inline-flex; }
+            .brand .title{ max-width: 160px; }
+            /* compact prev/next buttons on small screens */
+            .btnPrevText, .btnNextText{ display:none; }
+        }
 
-    @media (max-width: 520px){
-      .brand .title{ max-width: 130px; }
-      .actions{ gap:6px; }
-      .btn{ padding: 9px 8px; }
-    }
+        @media (max-width: 520px){
+            .brand .title{ max-width: 130px; }
+            .actions{ gap:6px; }
+            .btn{ padding: 9px 8px; }
+        }
 
-    /* ======================
-       MAIN LAYOUT
-       ====================== */
-    .wrap{
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 16px 16px 72px;
-      display:flex;
-      flex-direction: column;
-      gap: 14px;
-    }
+        /* ======================
+           MAIN LAYOUT
+           ====================== */
+        .wrap{
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 16px 16px 72px;
+            display:flex;
+            flex-direction: column;
+            gap: 14px;
+        }
 
-    header.hero, .panel, footer.site-footer{
-      background: var(--surface);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid var(--hair);
-      animation: fadeUp .55s ease both;
-    }
+        header.hero, .panel, footer.site-footer{
+            background: var(--surface);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--hair);
+            animation: fadeUp .55s ease both;
+        }
 
-    header.hero .hero-inner{
-      padding: 16px;
-      display:grid;
-      gap: 12px;
-    }
+        header.hero .hero-inner{
+            padding: 16px;
+            display:grid;
+            gap: 12px;
+        }
 
-    .hero-top{
-      display:grid;
-      grid-template-columns: 110px 1fr;
-      gap: 14px;
-      align-items:center;
-    }
-    @media (max-width: 520px){
-      .hero-top{ grid-template-columns: 1fr; }
-    }
+        .hero-top{
+            display:grid;
+            grid-template-columns: 110px 1fr;
+            gap: 14px;
+            align-items:center;
+        }
+        @media (max-width: 520px){
+            .hero-top{ grid-template-columns: 1fr; }
+        }
 
-    .portrait{
-      width: 110px;
-      height: 132px;
-      border: 1px solid var(--line);
-      background:
-        linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02)),
-        radial-gradient(70px 70px at 30% 30%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 65%),
-        radial-gradient(70px 70px at 70% 70%, color-mix(in srgb, var(--accent2) 18%, transparent), transparent 65%);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      overflow:hidden;
-    }
-    .portrait img{ width:100%; height:100%; object-fit:cover; display:block; }
-    .portrait .hint{ font-size:.78rem; color: var(--muted); padding: 10px; text-align:center; }
+        .portrait{
+            width: 110px;
+            height: 132px;
+            border: 1px solid var(--line);
+            background:
+                    linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02)),
+                    radial-gradient(70px 70px at 30% 30%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 65%),
+                    radial-gradient(70px 70px at 70% 70%, color-mix(in srgb, var(--accent2) 18%, transparent), transparent 65%);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            overflow:hidden;
+        }
+        .portrait img{ width:100%; height:100%; object-fit:cover; display:block; }
+        .portrait .hint{ font-size:.78rem; color: var(--muted); padding: 10px; text-align:center; }
 
-    .identity{ display:flex; flex-direction: column; gap: 6px; min-width: 0; }
-    h1{ margin:0; font-size: clamp(1.45rem, 2.6vw, 2.05rem); line-height: 1.15; }
-    .headline{ margin:0; color: var(--muted); font-size: 1rem; max-width: 76ch; }
+        .identity{ display:flex; flex-direction: column; gap: 6px; min-width: 0; }
+        h1{ margin:0; font-size: clamp(1.45rem, 2.6vw, 2.05rem); line-height: 1.15; }
+        .headline{ margin:0; color: var(--muted); font-size: 1rem; max-width: 76ch; }
 
-    .meta-row{
-      display:flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      border-top: 1px solid var(--hair);
-      padding-top: 12px;
-      align-items:center;
-      justify-content: flex-start;
-    }
+        .meta-row{
+            display:flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            border-top: 1px solid var(--hair);
+            padding-top: 12px;
+            align-items:center;
+            justify-content: flex-start;
+        }
 
-    .pill{
-      padding: 7px 10px;
-      border: 1px solid var(--line);
-      background: var(--pillBg);
-      color: var(--text);
-      font-size: .92rem;
-      white-space: nowrap;
-    }
+        .pill{
+            padding: 7px 10px;
+            border: 1px solid var(--line);
+            background: var(--pillBg);
+            color: var(--text);
+            font-size: .92rem;
+            white-space: nowrap;
+        }
 
-    main{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-      align-items:start;
-    }
-    @media (min-width: 940px){
-      main{ grid-template-columns: 1.2fr .8fr; }
-      aside.sticky{ position: sticky; top: 86px; } /* below stacked topbar */
-    }
+        main{
+            display:grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+            align-items:start;
+        }
+        @media (min-width: 940px){
+            main{ grid-template-columns: 1.2fr .8fr; }
+            aside.sticky{ position: sticky; top: 86px; } /* below stacked topbar */
+        }
 
-    .panel h2{
-      margin:0;
-      padding: 12px 14px;
-      border-bottom: 1px solid var(--hair);
-      font-size: 1.05rem;
-      letter-spacing:.2px;
-      display:flex;
-      align-items:center;
-      justify-content: space-between;
-      gap: 10px;
-    }
-    .panel .content{ padding: 12px 14px 14px; }
+        .panel h2{
+            margin:0;
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--hair);
+            font-size: 1.05rem;
+            letter-spacing:.2px;
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .panel .content{ padding: 12px 14px 14px; }
 
-    .grid{ display:grid; gap: 10px; }
+        .grid{ display:grid; gap: 10px; }
 
-    .chips{ display:flex; flex-wrap: wrap; gap: 8px; }
-    .chip{
-      border: 1px solid var(--line);
-      background: var(--chipBg);
-      color: var(--chipText);
-      padding: 6px 10px;
-      font-size: .92rem;
-      transition: transform .12s ease, background .12s ease;
-    }
-    .chip:hover{ transform: var(--elev); background: color-mix(in srgb, var(--chipBg) 70%, var(--hover)); }
+        .chips{ display:flex; flex-wrap: wrap; gap: 8px; }
+        .chip{
+            border: 1px solid var(--line);
+            background: var(--chipBg);
+            color: var(--chipText);
+            padding: 6px 10px;
+            font-size: .92rem;
+            transition: transform .12s ease, background .12s ease;
+        }
+        .chip:hover{ transform: var(--elev); background: color-mix(in srgb, var(--chipBg) 70%, var(--hover)); }
 
-    .item{ border-top: 1px solid var(--hair); padding: 12px 0 0; }
-    .item:first-child{ border-top: 0; padding-top: 0; }
+        .item{ border-top: 1px solid var(--hair); padding: 12px 0 0; }
+        .item:first-child{ border-top: 0; padding-top: 0; }
 
-    .item-card{
-      border: 1px solid var(--hair);
-      background: color-mix(in srgb, var(--surface2) 65%, transparent);
-      padding: 12px;
-      transition: transform .14s ease, background .14s ease, border-color .14s ease;
-    }
-    .item-card:hover{
-      transform: var(--elev);
-      background: color-mix(in srgb, var(--surface2) 75%, var(--hover));
-      border-color: color-mix(in srgb, var(--line) 70%, var(--accent) 30%);
-    }
+        .item-card{
+            border: 1px solid var(--hair);
+            background: color-mix(in srgb, var(--surface2) 65%, transparent);
+            padding: 12px;
+            transition: transform .14s ease, background .14s ease, border-color .14s ease;
+        }
+        .item-card:hover{
+            transform: var(--elev);
+            background: color-mix(in srgb, var(--surface2) 75%, var(--hover));
+            border-color: color-mix(in srgb, var(--line) 70%, var(--accent) 30%);
+        }
 
-    .item-head{
-      display:flex;
-      gap: 10px;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      align-items: baseline;
-    }
-    .role{ font-weight: 760; }
-    .org{ color: var(--muted); font-weight: 560; margin-top: 3px; }
-    .when{ color: var(--muted2); font-size: .95rem; white-space: nowrap; }
+        .item-head{
+            display:flex;
+            gap: 10px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
+        .role{ font-weight: 760; }
+        .org{ color: var(--muted); font-weight: 560; margin-top: 3px; }
+        .when{ color: var(--muted2); font-size: .95rem; white-space: nowrap; }
 
-    .timeline{
-      display:grid;
-      grid-template-columns: 86px 1fr;
-      gap: 12px;
-      align-items:start;
-    }
-    @media (max-width: 520px){
-      .timeline{ grid-template-columns: 1fr; }
-    }
-    .tcol{
-      position: relative;
-      padding-top: 4px;
-      min-height: 40px;
-    }
-    @media (max-width: 520px){
-      .tcol{ display:none; }
-    }
-    .tcol::before{
-      content:"";
-      position:absolute;
-      left: 14px;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background: var(--timelineLine);
-    }
-    .tstamp{
-      padding-left: 32px;
-      font-size: .92rem;
-      color: var(--muted2);
-      letter-spacing:.2px;
-      position: sticky;
-      top: 86px;
-    }
-    .tDot{
-      position:absolute;
-      left: 7px;
-      top: 0;
-      transform: translateY(var(--dotY, 0px));
-      width: 16px;
-      height: 16px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: var(--dotA);
-      transition: box-shadow .2s ease;
-    }
-    .tDot.b{ background: var(--dotB); }
-    .tDot.c{ background: var(--dotC); }
-    .item-card:hover .tDot{
-      box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent);
-    }
+        .timeline{
+            display:grid;
+            grid-template-columns: 86px 1fr;
+            gap: 12px;
+            align-items:start;
+        }
+        @media (max-width: 520px){
+            .timeline{ grid-template-columns: 1fr; }
+        }
+        .tcol{
+            position: relative;
+            padding-top: 4px;
+            min-height: 40px;
+        }
+        @media (max-width: 520px){
+            .tcol{ display:none; }
+        }
+        .tcol::before{
+            content:"";
+            position:absolute;
+            left: 14px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--timelineLine);
+        }
+        .tstamp{
+            padding-left: 32px;
+            font-size: .92rem;
+            color: var(--muted2);
+            letter-spacing:.2px;
+            position: sticky;
+            top: 86px;
+        }
+        .tDot{
+            position:absolute;
+            left: 7px;
+            top: 0;
+            transform: translateY(var(--dotY, 0px));
+            width: 16px;
+            height: 16px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background: var(--dotA);
+            transition: box-shadow .2s ease;
+        }
+        .tDot.b{ background: var(--dotB); }
+        .tDot.c{ background: var(--dotC); }
+        .item-card:hover .tDot{
+            box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent);
+        }
 
-    .bullets{
-      list-style:none;
-      margin: 10px 0 0;
-      padding: 0;
-      display:grid;
-      gap: 7px;
-    }
-    .bullets li{ position:relative; padding-left: 18px; }
-    .bullets li::before{
-      content: var(--listGlyph);
-      position:absolute;
-      left: 0;
-      top: 0;
-      color: color-mix(in srgb, var(--accent2) 65%, var(--accent) 35%);
-      font-weight: 900;
-      transform: translateY(1px);
-    }
+        .bullets{
+            list-style:none;
+            margin: 10px 0 0;
+            padding: 0;
+            display:grid;
+            gap: 7px;
+        }
+        .bullets li{ position:relative; padding-left: 18px; }
+        .bullets li::before{
+            content: var(--listGlyph);
+            position:absolute;
+            left: 0;
+            top: 0;
+            color: color-mix(in srgb, var(--accent2) 65%, var(--accent) 35%);
+            font-weight: 900;
+            transform: translateY(1px);
+        }
 
-    mark{
-      background: color-mix(in srgb, var(--accent3) 38%, transparent);
-      color: var(--text);
-      padding: 0 .08em;
-    }
+        mark{
+            background: color-mix(in srgb, var(--accent3) 38%, transparent);
+            color: var(--text);
+            padding: 0 .08em;
+        }
 
-    footer.site-footer{
-      padding: 14px 16px;
-      display:flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      align-items:center;
-      justify-content: space-between;
-      color: var(--muted);
-    }
+        footer.site-footer{
+            padding: 14px 16px;
+            display:flex;
+            flex-wrap: wrap;
+            gap: 10px 14px;
+            align-items:center;
+            justify-content: space-between;
+            color: var(--muted);
+        }
 
-    .contact{
-      display:flex;
-      flex-wrap: wrap;
-      gap: 8px 12px;
-      align-items:center;
-      color: var(--muted);
-      font-size: .98rem;
-      min-width: 0;
-    }
-    .contact a{
-      color: var(--link);
-      text-decoration:none;
-      border-bottom: 1px solid color-mix(in srgb, var(--link) 35%, transparent);
-      transition: color .15s ease, border-color .15s ease;
-    }
-    .contact a:hover{ color: var(--linkHover); border-bottom-color: color-mix(in srgb, var(--linkHover) 55%, transparent); }
-    .contact a:focus{ outline:none; box-shadow: var(--focus); padding:2px 4px; margin:-2px -4px; }
+        .contact{
+            display:flex;
+            flex-wrap: wrap;
+            gap: 8px 12px;
+            align-items:center;
+            color: var(--muted);
+            font-size: .98rem;
+            min-width: 0;
+        }
+        .contact a{
+            color: var(--link);
+            text-decoration:none;
+            border-bottom: 1px solid color-mix(in srgb, var(--link) 35%, transparent);
+            transition: color .15s ease, border-color .15s ease;
+        }
+        .contact a:hover{ color: var(--linkHover); border-bottom-color: color-mix(in srgb, var(--linkHover) 55%, transparent); }
+        .contact a:focus{ outline:none; box-shadow: var(--focus); padding:2px 4px; margin:-2px -4px; }
 
-    .to-top{
-      position: fixed;
-      right: 16px;
-      bottom: 16px;
-      z-index: 80;
-      opacity: 0;
-      pointer-events:none;
-      transform: translateY(8px);
-      transition: opacity .18s ease, transform .18s ease;
-    }
-    .to-top.show{
-      opacity: 1;
-      pointer-events:auto;
-      transform: translateY(0);
-    }
+        .to-top{
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            z-index: 80;
+            opacity: 0;
+            pointer-events:none;
+            transform: translateY(8px);
+            transition: opacity .18s ease, transform .18s ease;
+        }
+        .to-top.show{
+            opacity: 1;
+            pointer-events:auto;
+            transform: translateY(0);
+        }
 
-    .sr-only{
-      position:absolute;
-      width:1px;
-      height:1px;
-      padding:0;
-      margin:-1px;
-      overflow:hidden;
-      clip:rect(0,0,0,0);
-      white-space:nowrap;
-      border:0;
-    }
+        .sr-only{
+            position:absolute;
+            width:1px;
+            height:1px;
+            padding:0;
+            margin:-1px;
+            overflow:hidden;
+            clip:rect(0,0,0,0);
+            white-space:nowrap;
+            border:0;
+        }
 
-    @keyframes fadeUp{
-      from{ opacity:0; transform: translateY(8px); }
-      to{ opacity:1; transform: translateY(0); }
-    }
+        @keyframes fadeUp{
+            from{ opacity:0; transform: translateY(8px); }
+            to{ opacity:1; transform: translateY(0); }
+        }
 
-    @media (prefers-reduced-motion: reduce){
-      #net{ display:none; }
-      *{ scroll-behavior:auto !important; animation:none !important; transition:none !important; }
-    }
+        @media (prefers-reduced-motion: reduce){
+            #net{ display:none; }
+            *{ scroll-behavior:auto !important; animation:none !important; transition:none !important; }
+        }
 
-    @media print{
-      #net{ display:none; }
-      body{ background:#fff; color:#111; }
-      .topbar, .to-top{ display:none; }
-      header.hero, .panel, footer.site-footer{
-        background:#fff;
-        box-shadow:none;
-        backdrop-filter:none;
-        border-color:#bbb;
-      }
-      .btn, .chip, .pill, .toc a, .search input{
-        border-color:#bbb;
-        background:#f6f6f6;
-        color:#111;
-      }
-      .contact a{ color:#111; }
-    }
-  </style>
+        @media print{
+            #net{ display:none; }
+            body{ background:#fff; color:#111; }
+            .topbar, .to-top{ display:none; }
+            header.hero, .panel, footer.site-footer{
+                background:#fff;
+                box-shadow:none;
+                backdrop-filter:none;
+                border-color:#bbb;
+            }
+            .btn, .chip, .pill, .toc a, .search input{
+                border-color:#bbb;
+                background:#f6f6f6;
+                color:#111;
+            }
+            .contact a{ color:#111; }
+        }
+    </style>
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <canvas id="net" aria-hidden="true"></canvas>
+<a class="skip-link" href="#main">Skip to content</a>
+<canvas id="net" aria-hidden="true"></canvas>
 
-  <!-- TOPBAR -->
-  <div class="topbar" role="region" aria-label="Top bar">
+<!-- TOPBAR -->
+<div class="topbar" role="region" aria-label="Top bar">
     <div class="topbar-inner">
-      <div class="brand" aria-label="Site title">
-        <span class="mini" aria-hidden="true"></span>
-        <span class="title" id="brandTitle">Isabella C. Bertschi, PhD</span>
+        <div class="brand" aria-label="Site title">
+            <span class="mini" aria-hidden="true"></span>
+            <span class="title" id="brandTitle">Isabella C. Bertschi, PhD</span>
 
-        <button class="btn iconbtn hamburger" id="btnMenu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"/></svg>
-        </button>
-      </div>
-
-      <div class="search" role="search" aria-label="Search within CV">
-        <label class="sr-only" for="q" id="searchLabel">Search</label>
-        <input id="q" type="search" inputmode="search" autocomplete="off" placeholder="Search…" aria-describedby="searchHelp" />
-        <button class="btn iconbtn" id="btnPrev" type="button" aria-label="Previous match" title="Previous">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 19l-7-7 7-7 1.5 1.5L11.5 12l5.5 5.5L15.5 19z"/></svg>
-          <span class="btnPrevText" style="margin-left:8px;">Prev</span>
-        </button>
-        <button class="btn iconbtn" id="btnNext" type="button" aria-label="Next match" title="Next">
-          <span class="btnNextText" style="margin-right:8px;">Next</span>
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 19L7 17.5 12.5 12 7 6.5 8.5 5l7 7-7 7z"/></svg>
-        </button>
-        <div class="sr-only" id="searchHelp">Type to search. Use Next/Prev to navigate results.</div>
-        <div class="search-results" id="results" aria-hidden="true" aria-label="Search results"></div>
-      </div>
-
-      <div class="actions" aria-label="Actions">
-        <div class="dropdown">
-          <button class="btn" id="btnLang" type="button" aria-haspopup="menu" aria-expanded="false">
-            <span id="langLabel">EN</span> ▾
-          </button>
-          <div class="menu" id="langMenu" role="menu" aria-hidden="true" aria-label="Language menu"></div>
+            <button class="btn iconbtn hamburger" id="btnMenu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"/></svg>
+            </button>
         </div>
 
-        <button class="btn" id="btnTheme" type="button" aria-label="Toggle light/dark mode">
-          <span id="themeLabel">Dark</span>
-        </button>
+        <div class="search" role="search" aria-label="Search within CV">
+            <label class="sr-only" for="q" id="searchLabel">Search</label>
+            <input id="q" type="search" inputmode="search" autocomplete="off" placeholder="Search…" aria-describedby="searchHelp" />
+            <button class="btn iconbtn" id="btnPrev" type="button" aria-label="Previous match" title="Previous">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 19l-7-7 7-7 1.5 1.5L11.5 12l5.5 5.5L15.5 19z"/></svg>
+                <span class="btnPrevText" style="margin-left:8px;">Prev</span>
+            </button>
+            <button class="btn iconbtn" id="btnNext" type="button" aria-label="Next match" title="Next">
+                <span class="btnNextText" style="margin-right:8px;">Next</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 19L7 17.5 12.5 12 7 6.5 8.5 5l7 7-7 7z"/></svg>
+            </button>
+            <div class="sr-only" id="searchHelp">Type to search. Use Next/Prev to navigate results.</div>
+            <div class="search-results" id="results" aria-hidden="true" aria-label="Search results"></div>
+        </div>
 
-        <button class="btn iconbtn" id="btnCopy" type="button" aria-label="Copy email">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H6c-1.1 0-2 .9-2 2v12h2V3h10V1zm3 4H10c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h9c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H10V7h9v14z"/></svg>
-        </button>
+        <div class="actions" aria-label="Actions">
+            <div class="dropdown">
+                <button class="btn" id="btnLang" type="button" aria-haspopup="menu" aria-expanded="false">
+                    <span id="langLabel">EN</span> ▾
+                </button>
+                <div class="menu" id="langMenu" role="menu" aria-hidden="true" aria-label="Language menu"></div>
+            </div>
 
-        <button class="btn iconbtn" id="btnPrint" type="button" aria-label="Print / Save PDF">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 8H5c-1.66 0-3 1.34-3 3v4h4v4h12v-4h4v-4c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-13V1H5v5h14z"/></svg>
-        </button>
+            <button class="btn" id="btnTheme" type="button" aria-label="Toggle light/dark mode">
+                <span id="themeLabel">Dark</span>
+            </button>
 
-        <span class="sr-only" id="liveStatus" aria-live="polite"></span>
-      </div>
+            <button class="btn iconbtn" id="btnCopy" type="button" aria-label="Copy email">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H6c-1.1 0-2 .9-2 2v12h2V3h10V1zm3 4H10c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h9c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H10V7h9v14z"/></svg>
+            </button>
+
+            <button class="btn iconbtn" id="btnPrint" type="button" aria-label="Print / Save PDF">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 8H5c-1.66 0-3 1.34-3 3v4h4v4h12v-4h4v-4c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-13V1H5v5h14z"/></svg>
+            </button>
+
+            <span class="sr-only" id="liveStatus" aria-live="polite"></span>
+        </div>
     </div>
 
     <div class="mobile-drawer" id="mobileDrawer" hidden>
-      <div class="mobile-drawer-inner">
-        <nav class="toc" aria-label="Menu">
-          <a href="#profile" id="navProfile">Profile</a>
-          <a href="#competencies" id="navCompetencies">Core competencies</a>
-          <a href="#experience" id="navExperience">Professional experience</a>
-          <a href="#education" id="navEducation">Education</a>
-          <a href="#methods" id="navMethods">Methods & tools</a>
-        </nav>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrap">
-    <header class="hero" role="banner" aria-label="Header">
-      <div class="hero-inner">
-        <div class="hero-top">
-          <div class="portrait" aria-label="Portrait">
-            <img id="portraitImg" alt="" src="" style="display:none" />
-            <div id="portraitHint" class="hint">Portrait</div>
-          </div>
-
-          <div class="identity">
-            <h1 id="cvName">—</h1>
-            <p class="headline" id="cvHeadline">—</p>
-
-            <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
-              <span class="pill" id="cvNationality">—</span>
-              <span class="pill" id="cvDob">—</span>
-              <span class="pill" id="cvCity">Brugg</span>
-              <span class="pill" id="cvCountry">Switzerland</span>
-            </div>
-          </div>
+        <div class="mobile-drawer-inner">
+            <nav class="toc" aria-label="Menu">
+                <a href="#profile" id="navProfile">Profile</a>
+                <a href="#competencies" id="navCompetencies">Core competencies</a>
+                <a href="#experience" id="navExperience">Professional experience</a>
+                <a href="#education" id="navEducation">Education</a>
+                <a href="#methods" id="navMethods">Methods & tools</a>
+            </nav>
         </div>
+    </div>
+</div>
 
-        <!-- Address removed; phone/email moved to footer only -->
-      </div>
+<div class="wrap">
+    <header class="hero" role="banner" aria-label="Header">
+        <div class="hero-inner">
+            <div class="hero-top">
+                <div class="portrait" aria-label="Portrait">
+                    <img id="portraitImg" alt="" src="" style="display:none" />
+                    <div id="portraitHint" class="hint">Portrait</div>
+                </div>
+
+                <div class="identity">
+                    <h1 id="cvName">—</h1>
+                    <p class="headline" id="cvHeadline">—</p>
+
+                    <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+                        <span class="pill" id="cvNationality">—</span>
+                        <span class="pill" id="cvDob">—</span>
+                        <span class="pill" id="cvCity">Brugg</span>
+                        <span class="pill" id="cvCountry">Switzerland</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Address removed; phone/email moved to footer only -->
+        </div>
     </header>
 
     <main id="main" role="main" tabindex="-1" aria-label="Main content">
-      <div class="grid">
-        <section class="panel" id="profile" aria-labelledby="hProfile">
-          <h2 id="hProfile">Profile</h2>
-          <div class="content">
-            <p id="cvProfile" style="margin:0; color:var(--muted); max-width: 84ch;">—</p>
-          </div>
-        </section>
+        <div class="grid">
+            <section class="panel" id="profile" aria-labelledby="hProfile">
+                <h2 id="hProfile">Profile</h2>
+                <div class="content">
+                    <p id="cvProfile" style="margin:0; color:var(--muted); max-width: 84ch;">—</p>
+                </div>
+            </section>
 
-        <section class="panel" id="experience" aria-labelledby="hExperience">
-          <h2 id="hExperience">Professional experience</h2>
-          <div class="content">
-            <div class="grid" id="cvExperience"></div>
-          </div>
-        </section>
+            <section class="panel" id="experience" aria-labelledby="hExperience">
+                <h2 id="hExperience">Professional experience</h2>
+                <div class="content">
+                    <div class="grid" id="cvExperience"></div>
+                </div>
+            </section>
 
-        <section class="panel" id="education" aria-labelledby="hEducation">
-          <h2 id="hEducation">Education</h2>
-          <div class="content">
-            <div class="grid" id="cvEducation"></div>
-          </div>
-        </section>
-      </div>
+            <section class="panel" id="education" aria-labelledby="hEducation">
+                <h2 id="hEducation">Education</h2>
+                <div class="content">
+                    <div class="grid" id="cvEducation"></div>
+                </div>
+            </section>
+        </div>
 
-      <aside class="grid sticky" aria-label="Sidebar">
-        <section class="panel" id="competencies" aria-labelledby="hCompetencies">
-          <h2 id="hCompetencies">Core competencies</h2>
-          <div class="content">
-            <div class="chips" id="cvCompetencies"></div>
-          </div>
-        </section>
+        <aside class="grid sticky" aria-label="Sidebar">
+            <section class="panel" id="competencies" aria-labelledby="hCompetencies">
+                <h2 id="hCompetencies">Core competencies</h2>
+                <div class="content">
+                    <div class="chips" id="cvCompetencies"></div>
+                </div>
+            </section>
 
-        <section class="panel" aria-labelledby="hLanguages">
-          <h2 id="hLanguages">Languages</h2>
-          <div class="content">
-            <div class="chips" id="cvLanguages"></div>
-          </div>
-        </section>
+            <section class="panel" aria-labelledby="hLanguages">
+                <h2 id="hLanguages">Languages</h2>
+                <div class="content">
+                    <div class="chips" id="cvLanguages"></div>
+                </div>
+            </section>
 
-        <section class="panel" id="methods" aria-labelledby="hMethods">
-          <h2 id="hMethods">Methods & tools</h2>
-          <div class="content">
-            <div class="grid" id="cvMethods"></div>
-          </div>
-        </section>
-      </aside>
+            <section class="panel" id="methods" aria-labelledby="hMethods">
+                <h2 id="hMethods">Methods & tools</h2>
+                <div class="content">
+                    <div class="grid" id="cvMethods"></div>
+                </div>
+            </section>
+        </aside>
     </main>
 
     <!-- Footer: phone + email only (address eliminated) -->
     <footer class="site-footer" role="contentinfo" aria-label="Footer">
-      <div class="contact" aria-label="Footer contact">
-        <span id="footName">Isabella Cristina Bertschi, PhD</span>
-        <span aria-hidden="true">·</span>
-        <a id="footEmail" href="#">—</a>
-        <span aria-hidden="true">·</span>
-        <a id="footPhone" href="#">—</a>
-      </div>
-      <div>
-        <span id="footYear">—</span>
-      </div>
+        <div class="contact" aria-label="Footer contact">
+            <span id="footName">Isabella Cristina Bertschi, PhD</span>
+            <span aria-hidden="true">·</span>
+            <a id="footEmail" href="#">—</a>
+            <span aria-hidden="true">·</span>
+            <a id="footPhone" href="#">—</a>
+        </div>
+        <div>
+            <span id="footYear">—</span>
+        </div>
     </footer>
-  </div>
+</div>
 
-  <div class="to-top" id="toTopWrap">
+<div class="to-top" id="toTopWrap">
     <button class="btn iconbtn" id="btnTop" type="button" aria-label="Back to top">
-      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15l8-8 8 8H4z"/></svg>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15l8-8 8 8H4z"/></svg>
     </button>
-  </div>
+</div>
 
-  <script>
+<script>
     const cvData = {
-      person: {
-        name: "Isabella Cristina Bertschi, PhD",
-        headline: {
-          en: "Market & Consumer Research | Mixed Methods | Insight-to-Strategy",
-          de: "Markt- & Konsumentenforschung | Mixed Methods | Insights zu Strategie",
-          fr: "Études de marché & consommateurs | Méthodes mixtes | Insights → stratégie",
-          es: "Investigación de mercado y consumidor | Métodos mixtos | Insights → estrategia"
+        person: {
+            name: "Isabella Cristina Bertschi, PhD",
+            headline: {
+                en: "Market & Consumer Research | Mixed Methods | Insight-to-Strategy",
+                de: "Markt- & Konsumentenforschung | Mixed Methods | Insights zu Strategie",
+                fr: "Études de marché & consommateurs | Méthodes mixtes | Insights → stratégie",
+                es: "Investigación de mercado y consumidor | Métodos mixtos | Insights → estrategia"
+            },
+            address: "Zurzacherstrasse 52C, 5200 Brugg, Switzerland",
+            phone: "+41 76 392 21 79",
+            email: "isabella.bertschi@hotmail.com",
+            nationality: {
+                en: "Swiss national",
+                de: "Schweizer Staatsangehörigkeit",
+                fr: "Nationalité suisse",
+                es: "Nacionalidad suiza"
+            },
+            dob: {
+                en: "Born 10 March 1990",
+                de: "Geboren am 10. März 1990",
+                fr: "Née le 10 mars 1990",
+                es: "Nacida el 10 de marzo de 1990"
+            },
+            portrait: {
+                src: "", // place portrait URL or data:image/... here
+                alt: {
+                    en: "Portrait of Isabella Cristina Bertschi",
+                    de: "Porträt von Isabella Cristina Bertschi",
+                    fr: "Portrait d’Isabella Cristina Bertschi",
+                    es: "Retrato de Isabella Cristina Bertschi"
+                }
+            }
         },
-        phone: "+41 76 392 21 79",
-        email: "isabella.bertschi@hotmail.com",
-        nationality: {
-          en: "Swiss national",
-          de: "Schweizer Staatsangehörigkeit",
-          fr: "Nationalité suisse",
-          es: "Nacionalidad suiza"
+
+        profile: {
+            en:
+                "Market and consumer research professional with 10+ years of experience leading qualitative and quantitative research across complex stakeholder environments. Strong background in mixed-methods research, customer experience, and insight-to-strategy translation. Proven track record in advising senior stakeholders, ensuring research rigour, and transforming data into actionable business and product decisions. Experienced in healthcare-related research contexts and interdisciplinary collaboration.",
+            de:
+                "Markt- und Konsumentenforschungs-Profi mit über 10 Jahren Erfahrung in der Leitung qualitativer und quantitativer Studien in komplexen Stakeholder-Umfeldern. Starker Fokus auf Mixed-Methods, Customer Experience und der Übersetzung von Insights in Strategie. Erprobt in der Beratung von Senior Stakeholdern, in methodischer Qualitätssicherung sowie in der Ableitung umsetzbarer Business- und Produktentscheidungen. Erfahrung in gesundheitsnahen Forschungskontexten und interdisziplinärer Zusammenarbeit.",
+            fr:
+                "Professionnelle des études de marché et consommateurs avec plus de 10 ans d’expérience dans la conduite d’études qualitatives et quantitatives auprès de parties prenantes complexes. Solide expertise en méthodes mixtes, expérience client et transformation des insights en stratégie. Habituée à conseiller des décideurs, à garantir la rigueur méthodologique et à convertir les données en recommandations actionnables. Expérience dans des contextes liés à la santé et en collaboration interdisciplinaire.",
+            es:
+                "Profesional de investigación de mercado y consumidor con más de 10 años liderando estudios cualitativos y cuantitativos en entornos complejos de stakeholders. Fuerte base en métodos mixtos, experiencia del cliente y traducción de insights a estrategia. Trayectoria asesorando a responsables senior, garantizando rigor metodológico y convirtiendo datos en decisiones accionables de negocio y producto. Experiencia en contextos vinculados a salud y colaboración interdisciplinaria."
         },
-        dob: {
-          en: "Born 10 March 1990",
-          de: "Geboren am 10. März 1990",
-          fr: "Née le 10 mars 1990",
-          es: "Nacida el 10 de marzo de 1990"
-        },
-        portrait: {
-          src: "",
-          alt: {
-            en: "Portrait of Isabella Cristina Bertschi",
-            de: "Porträt von Isabella Cristina Bertschi",
-            fr: "Portrait d’Isabella Cristina Bertschi",
-            es: "Retrato de Isabella Cristina Bertschi"
-          }
+
+        competencies: [
+            { en:"Market & Consumer Insights Strategy", de:"Insights-Strategie (Markt & Konsument)", fr:"Stratégie d’insights marché & consommateurs", es:"Estrategia de insights de mercado y consumidor" },
+            { en:"Qualitative & Quantitative Research (Mixed Methods)", de:"Qualitativ & Quantitativ (Mixed Methods)", fr:"Recherche qualitative & quantitative (méthodes mixtes)", es:"Investigación cualitativa y cuantitativa (métodos mixtos)" },
+            { en:"Healthcare / Life Sciences Research Contexts", de:"Gesundheitswesen / Life Sciences", fr:"Contextes santé / sciences de la vie", es:"Contextos de salud / ciencias de la vida" },
+            { en:"Study Design & Methodology Development", de:"Studiendesign & Methodenentwicklung", fr:"Conception d’études & méthodologie", es:"Diseño de estudios y desarrollo metodológico" },
+            { en:"Stakeholder & Senior Management Advisory", de:"Stakeholder- & Management-Beratung", fr:"Conseil aux parties prenantes & direction", es:"Asesoría a stakeholders y dirección" },
+            { en:"Insight-to-Action & Strategic Recommendations", de:"Insights → Handlung & Empfehlungen", fr:"Insights → action & recommandations", es:"Insights → acción y recomendaciones" },
+            { en:"Customer Experience & User-Centered Research", de:"Customer Experience & nutzerzentrierte Forschung", fr:"Expérience client & recherche centrée utilisateur", es:"Customer experience e investigación centrada en usuario" },
+            { en:"Research Quality Management & Governance", de:"Qualitätsmanagement & Governance", fr:"Qualité & gouvernance de recherche", es:"Gestión de calidad y gobernanza de investigación" },
+            { en:"Workshop Facilitation & Executive Presentations", de:"Workshop-Moderation & Executive-Präsentationen", fr:"Animation d’ateliers & présentations exécutives", es:"Facilitación de talleres y presentaciones ejecutivas" },
+            { en:"Team Leadership & Capability Building", de:"Teamführung & Kompetenzaufbau", fr:"Leadership & développement des compétences", es:"Liderazgo y desarrollo de capacidades" }
+        ],
+
+        languages: [
+            { en:"German (native)", de:"Deutsch (Muttersprache)", fr:"Allemand (langue maternelle)", es:"Alemán (nativo)" },
+            { en:"English (C2)", de:"Englisch (C2)", fr:"Anglais (C2)", es:"Inglés (C2)" },
+            { en:"French (C1)", de:"Französisch (C1)", fr:"Français (C1)", es:"Francés (C1)" },
+            { en:"Spanish (C1)", de:"Spanisch (C1)", fr:"Espagnol (C1)", es:"Español (C1)" }
+        ],
+
+        experience: [
+            {
+                org: "intervista AG, Zurich",
+                role: {
+                    en:"Senior Project Manager Market Research (since July 2024, 80%)",
+                    de:"Senior Project Manager Markt- und Meinungsforschung (seit Juli 2024, 80%)",
+                    fr:"Senior Project Manager études de marché (depuis juil. 2024, 80%)",
+                    es:"Senior Project Manager investigación de mercado (desde jul. 2024, 80%)"
+                },
+                period: "Project Manager Market Research (July 2022 – June 2024, 80–100%)",
+                when: { start: "2024-07", end: "" },
+                bullets: [
+                    { en:"Lead complex qualitative, quantitative, and mixed-methods research programs across different industries",
+                        de:"Leitung komplexer qualitativer, quantitativer und Mixed-Methods-Studien über verschiedene Branchen",
+                        fr:"Pilotage de programmes de recherche qualitatifs, quantitatifs et mixtes multi-secteurs",
+                        es:"Liderazgo de programas cualitativos, cuantitativos y de métodos mixtos en múltiples industrias" },
+                    { en:"Advise senior stakeholders on research strategy, methodology, and business implications of insights",
+                        de:"Beratung von Senior Stakeholdern zu Forschungsstrategie, Methodik und Business-Implikationen",
+                        fr:"Conseil aux décideurs sur stratégie, méthodologie et implications business",
+                        es:"Asesoría a stakeholders senior sobre estrategia, metodología e implicaciones de negocio" },
+                    { en:"Own end-to-end research delivery: study design, instrument development, fieldwork, data analysis, and executive-ready reporting",
+                        de:"End-to-End Verantwortung: Studiendesign, Instrumente, Feldarbeit, Analyse und Management-Reporting",
+                        fr:"Responsable de bout en bout : design, instruments, terrain, analyse, reporting exécutif",
+                        es:"Responsable end-to-end: diseño, instrumentos, campo, análisis e informes ejecutivos" },
+                    { en:"Translate consumer, customer, and user insights into concrete strategic and operational recommendations",
+                        de:"Übersetzung von Insights in konkrete strategische und operative Empfehlungen",
+                        fr:"Transformation des insights en recommandations stratégiques et opérationnelles",
+                        es:"Traducción de insights en recomendaciones estratégicas y operativas" },
+                    { en:"Ensure methodological rigour and quality standards for qualitative market and consumer research across the organization",
+                        de:"Sicherstellung methodischer Qualität und Standards für qualitative Forschung organisationsweit",
+                        fr:"Garantie de la rigueur méthodologique et des standards qualité en qualitatif",
+                        es:"Aseguramiento de rigor metodológico y estándares de calidad en investigación cualitativa" },
+                    { en:"Design and moderate executive workshops (strategy, concept development, results activation)",
+                        de:"Konzeption und Moderation von Executive-Workshops (Strategie, Konzepte, Aktivierung)",
+                        fr:"Conception et animation d’ateliers exécutifs (stratégie, concepts, activation)",
+                        es:"Diseño y moderación de workshops ejecutivos (estrategia, conceptos, activación)" },
+                    { en:"Conduct in-depth interviews (DE/FR/EN), large-scale surveys, observational research, and usability studies",
+                        de:"Durchführung von Tiefeninterviews (DE/FR/EN), Surveys, Beobachtungen und Usability-Studien",
+                        fr:"Entretiens approfondis (DE/FR/EN), enquêtes, observation et tests d’utilisabilité",
+                        es:"Entrevistas en profundidad (DE/FR/EN), encuestas, observación y estudios de usabilidad" },
+                    { en:"Lead internal capability building: training, coaching, and supervising project managers",
+                        de:"Interner Kompetenzaufbau: Trainings, Coaching und Supervision von Projektleitenden",
+                        fr:"Montée en compétence interne : formation, coaching et supervision",
+                        es:"Desarrollo interno: formación, coaching y supervisión de PMs" },
+                    { en:"Contribute to business development: write proposals, consult clients, and research scoping",
+                        de:"Beitrag zu Business Development: Offerten, Beratung, Scoping",
+                        fr:"Contribution au développement commercial : propositions, conseil, cadrage",
+                        es:"Apoyo a business development: propuestas, consultoría y scoping" }
+                ]
+            },
+            {
+                org: "Lucerne University of Applied Sciences and Arts (HSLU) / HWZ Zurich School of Business",
+                role: { en:"Lecturer (part-time)", de:"Dozentin (Teilzeit)", fr:"Enseignante (temps partiel)", es:"Docente (parcial)" },
+                period: "Jan 2023 – Feb 2025",
+                when: { start: "2023-01", end: "2025-02" },
+                bullets: [
+                    { en:"Taught market and consumer research as well as customer experience to business professionals",
+                        de:"Lehre zu Markt- und Konsumentenforschung sowie Customer Experience für Praktiker",
+                        fr:"Enseignement des études de marché et de l’expérience client à des professionnels",
+                        es:"Docencia en investigación de mercado/consumidor y customer experience a profesionales" },
+                    { en:"Bridged academic rigour and applied business decision-making through research and insight generation",
+                        de:"Brücke zwischen akademischer Strenge und angewandten Entscheidungen durch Insights",
+                        fr:"Pont entre rigueur académique et décisions business via insights",
+                        es:"Puente entre rigor académico y decisiones de negocio mediante insights" }
+                ]
+            },
+            {
+                org: "Swiss Central Association of and for the Blind (SZBLIND), Zurich",
+                role: { en:"Project Lead, Translational Research (80%, fixed-term)", de:"Projektleitung, Translational Research (80%, befristet)", fr:"Cheffe de projet, recherche translationnelle (80%, CDD)", es:"Líder de proyecto, investigación traslacional (80%, temporal)" },
+                period: "Jan 2022 – Apr 2022",
+                when: { start: "2022-01", end: "2022-04" },
+                bullets: [
+                    { en:"Translated research evidence into real-world advisory and service practice",
+                        de:"Übersetzung von Evidenz in Beratung und Dienstleistungspraxis",
+                        fr:"Traduction de l’évidence en pratiques de conseil et de service",
+                        es:"Traducción de evidencia en práctica de asesoría y servicios" },
+                    { en:"Developed practical and policy-relevant recommendations based on empirical evidence",
+                        de:"Entwicklung praxis- und politikrelevanter Empfehlungen auf empirischer Basis",
+                        fr:"Développement de recommandations pratiques et pertinentes pour les politiques publiques",
+                        es:"Recomendaciones prácticas y relevantes para políticas basadas en evidencia" },
+                    { en:"Communicated research findings to practitioners and policy stakeholders",
+                        de:"Kommunikation von Ergebnissen an Praxis- und Politik-Stakeholder",
+                        fr:"Communication des résultats aux praticiens et parties prenantes",
+                        es:"Comunicación de hallazgos a practicantes y stakeholders de política" },
+                    { en:"Worked in a healthcare-adjacent, impact-driven research environment with strong stakeholder orientation",
+                        de:"Arbeit in gesundheitsnahem, wirkungsorientiertem Forschungsumfeld mit hoher Stakeholder-Orientierung",
+                        fr:"Contexte proche de la santé, orienté impact, avec forte dimension parties prenantes",
+                        es:"Entorno cercano a salud, orientado a impacto y con fuerte enfoque en stakeholders" }
+                ]
+            },
+            {
+                org: "University of Zurich, Institute of Psychology",
+                role: { en:"Research Assistant & PhD Candidate (Couple and Family Psychology)", de:"Wissenschaftliche Assistenz & Doktorandin (Paar- und Familienpsychologie)", fr:"Assistante de recherche & doctorante (psychologie du couple et de la famille)", es:"Asistente de investigación y doctoranda (psicología de pareja y familia)" },
+                period: "Mar 2018 – Dec 2021 (70%)",
+                when: { start: "2018-03", end: "2021-12" },
+                bullets: [
+                    { en:"Co-led a trilingual mixed-methods research program with 12 team members",
+                        de:"Co-Leitung eines dreisprachigen Mixed-Methods-Programms mit 12 Teammitgliedern",
+                        fr:"Co-direction d’un programme trilingue en méthodes mixtes (12 personnes)",
+                        es:"Co-liderazgo de programa trilingüe de métodos mixtos (12 personas)" },
+                    { en:"Analyzed quantitative data for publications, stakeholder reports, and conference presentations",
+                        de:"Analyse quantitativer Daten für Publikationen, Stakeholder-Reports und Konferenzen",
+                        fr:"Analyse de données quantitatives pour publications, rapports et conférences",
+                        es:"Análisis de datos cuantitativos para publicaciones, informes y conferencias" },
+                    { en:"Derived clear insights from complex data and communicated them to academic and non-academic audiences",
+                        de:"Ableitung klarer Insights aus komplexen Daten und zielgruppengerechte Kommunikation",
+                        fr:"Synthèse d’insights clairs et communication à des publics académiques et non académiques",
+                        es:"Extracción de insights claros y comunicación a públicos académicos y no académicos" },
+                    { en:"Built strong expertise in study design, data governance, and evidence-based decision support",
+                        de:"Aufbau von Expertise in Studiendesign, Data Governance und evidenzbasierter Entscheidungsunterstützung",
+                        fr:"Expertise en design d’étude, gouvernance des données, aide à la décision",
+                        es:"Experiencia en diseño de estudio, gobernanza de datos y soporte de decisiones" },
+                    { en:"Taught classes, supervised theses, and mentored students",
+                        de:"Lehre, Betreuung von Abschlussarbeiten und Mentoring",
+                        fr:"Enseignement, encadrement de mémoires, mentorat",
+                        es:"Docencia, supervisión de tesis y mentoría" }
+                ]
+            },
+            {
+                org: "University of Teacher Education FHNW, Basel",
+                role: { en:"Research Associate – Social Learning under Challenging Conditions", de:"Wissenschaftliche Mitarbeit – Soziales Lernen unter herausfordernden Bedingungen", fr:"Chargée de recherche – apprentissage social en conditions difficiles", es:"Investigadora asociada – aprendizaje social en condiciones desafiantes" },
+                period: "Feb 2016 – Feb 2018 (70–90%)",
+                when: { start: "2016-02", end: "2018-02" },
+                bullets: [
+                    { en:"Designed and conducted qualitative interview and observational studies across diverse target groups",
+                        de:"Konzeption und Durchführung qualitativer Interview- und Beobachtungsstudien mit diversen Zielgruppen",
+                        fr:"Conception et conduite d’entretiens et d’études observationnelles qualitatives",
+                        es:"Diseño y ejecución de entrevistas y estudios observacionales cualitativos" },
+                    { en:"Analyzed qualitative data for publications, presentations, and curriculum development",
+                        de:"Analyse qualitativer Daten für Publikationen, Präsentationen und Curricula",
+                        fr:"Analyse de données qualitatives pour publications, présentations et curricula",
+                        es:"Análisis cualitativo para publicaciones, presentaciones y desarrollo curricular" },
+                    { en:"Worked in interdisciplinary, applied research contexts with strong practical relevance",
+                        de:"Arbeit in interdisziplinären, anwendungsnahen Kontexten mit hoher Praxisrelevanz",
+                        fr:"Contexte interdisciplinaire et appliqué, forte pertinence pratique",
+                        es:"Contextos interdisciplinarios y aplicados con alta relevancia práctica" }
+                ]
+            }
+        ],
+
+        education: [
+            { title:{en:"PhD in Psychology, University of Zurich", de:"PhD Psychologie, Universität Zürich", fr:"Doctorat en psychologie, Université de Zurich", es:"Doctorado en psicología, Universidad de Zúrich"},
+                detail:{en:"Doctor of Philosophy (PhD), magna cum laude", de:"Doctor of Philosophy (PhD), magna cum laude", fr:"Doctorat (PhD), magna cum laude", es:"Doctorado (PhD), magna cum laude"},
+                period:"2018 – 2021"
+            },
+            { title:{en:"MSc in Psychology (Clinical Psychology & Neuroscience), University of Basel", de:"MSc Psychologie (Klinische Psychologie & Neurowissenschaften), Universität Basel", fr:"Master en psychologie (clinique & neurosciences), Université de Bâle", es:"MSc Psicología (clínica y neurociencia), Universidad de Basilea"},
+                detail:"", period:"2013 – 2015"
+            },
+            { title:{en:"BSc in Psychology, University of Fribourg", de:"BSc Psychologie, Universität Freiburg", fr:"Bachelor en psychologie, Université de Fribourg", es:"BSc Psicología, Universidad de Friburgo"},
+                detail:"", period:"2010 – 2013"
+            }
+        ],
+
+        methodsTools: [
+            { heading:{en:"Research methods — Qualitative", de:"Forschungsmethoden — Qualitativ", fr:"Méthodes — Qualitatif", es:"Métodos — Cualitativo"},
+                items:["In-depth interviews","Usability testing","Ethnographic / observational studies","Workshops","MAXQDA"]
+            },
+            { heading:{en:"Research methods — Quantitative", de:"Forschungsmethoden — Quantitativ", fr:"Méthodes — Quantitatif", es:"Métodos — Cuantitativo"},
+                items:["Surveys","Multivariate analysis","SPSS","AMOS","R","Mplus"]
+            },
+            { heading:{en:"Research platforms", de:"Research-Plattformen", fr:"Plateformes", es:"Plataformas"},
+                items:["EFS Survey / Unipark","SurveyMonkey","f4transkript","Amazon Mechanical Turk"]
+            },
+            { heading:{en:"Business tools", de:"Business-Tools", fr:"Outils business", es:"Herramientas"},
+                items:["MS Office (Excel, PowerPoint, Word – advanced)","Google Workspace","Figma (basic)","WordPress (basic)"]
+            }
+        ],
+
+        i18n: {
+            en: {
+                profile:"Profile",
+                competencies:"Core competencies",
+                experience:"Professional experience",
+                education:"Education",
+                methods:"Methods & tools",
+                languages:"Languages",
+                searchPlaceholder:"Search…",
+                prev:"Prev",
+                next:"Next",
+                copyOk:"Email copied to clipboard.",
+                noResults:"No results",
+                portrait:"Portrait"
+            },
+            de: {
+                profile:"Profil",
+                competencies:"Kernkompetenzen",
+                experience:"Berufserfahrung",
+                education:"Ausbildung",
+                methods:"Methoden & Tools",
+                languages:"Sprachen",
+                searchPlaceholder:"Suchen…",
+                prev:"Zurück",
+                next:"Weiter",
+                copyOk:"E-Mail in die Zwischenablage kopiert.",
+                noResults:"Keine Treffer",
+                portrait:"Porträt"
+            },
+            fr: {
+                profile:"Profil",
+                competencies:"Compétences clés",
+                experience:"Expérience professionnelle",
+                education:"Formation",
+                methods:"Méthodes & outils",
+                languages:"Langues",
+                searchPlaceholder:"Rechercher…",
+                prev:"Précédent",
+                next:"Suivant",
+                copyOk:"E-mail copié dans le presse-papiers.",
+                noResults:"Aucun résultat",
+                portrait:"Portrait"
+            },
+            es: {
+                profile:"Perfil",
+                competencies:"Competencias clave",
+                experience:"Experiencia profesional",
+                education:"Educación",
+                methods:"Métodos y herramientas",
+                languages:"Idiomas",
+                searchPlaceholder:"Buscar…",
+                prev:"Anterior",
+                next:"Siguiente",
+                copyOk:"Correo copiado al portapapeles.",
+                noResults:"Sin resultados",
+                portrait:"Retrato"
+            }
         }
-      },
-
-      profile: {
-        en:
-          "Market and consumer research professional with 10+ years of experience leading qualitative and quantitative research across complex stakeholder environments. Strong background in mixed-methods research, customer experience, and insight-to-strategy translation. Proven track record in advising senior stakeholders, ensuring research rigour, and transforming data into actionable business and product decisions. Experienced in healthcare-related research contexts and interdisciplinary collaboration.",
-        de:
-          "Markt- und Konsumentenforschungs-Profi mit über 10 Jahren Erfahrung in der Leitung qualitativer und quantitativer Studien in komplexen Stakeholder-Umfeldern. Starker Fokus auf Mixed-Methods, Customer Experience und der Übersetzung von Insights in Strategie. Erprobt in der Beratung von Senior Stakeholdern, in methodischer Qualitätssicherung sowie in der Ableitung umsetzbarer Business- und Produktentscheidungen. Erfahrung in gesundheitsnahen Forschungskontexten und interdisziplinärer Zusammenarbeit.",
-        fr:
-          "Professionnelle des études de marché et consommateurs avec plus de 10 ans d’expérience dans la conduite d’études qualitatives et quantitatives auprès de parties prenantes complexes. Solide expertise en méthodes mixtes, expérience client et transformation des insights en stratégie. Habituée à conseiller des décideurs, à garantir la rigueur méthodologique et à convertir les données en recommandations actionnables. Expérience dans des contextes liés à la santé et en collaboration interdisciplinaire.",
-        es:
-          "Profesional de investigación de mercado y consumidor con más de 10 años liderando estudios cualitativos y cuantitativos en entornos complejos de stakeholders. Fuerte base en métodos mixtos, experiencia del cliente y traducción de insights a estrategia. Trayectoria asesorando a responsables senior, garantizando rigor metodológico y convirtiendo datos en decisiones accionables de negocio y producto. Experiencia en contextos vinculados a salud y colaboración interdisciplinaria."
-      },
-
-      competencies: [
-        { en:"Market & Consumer Insights Strategy", de:"Insights-Strategie (Markt & Konsument)", fr:"Stratégie d’insights marché & consommateurs", es:"Estrategia de insights de mercado y consumidor" },
-        { en:"Qualitative & Quantitative Research (Mixed Methods)", de:"Qualitativ & Quantitativ (Mixed Methods)", fr:"Recherche qualitative & quantitative (méthodes mixtes)", es:"Investigación cualitativa y cuantitativa (métodos mixtos)" },
-        { en:"Healthcare / Life Sciences Research Contexts", de:"Gesundheitswesen / Life Sciences", fr:"Contextes santé / sciences de la vie", es:"Contextos de salud / ciencias de la vida" },
-        { en:"Study Design & Methodology Development", de:"Studiendesign & Methodenentwicklung", fr:"Conception d’études & méthodologie", es:"Diseño de estudios y desarrollo metodológico" },
-        { en:"Stakeholder & Senior Management Advisory", de:"Stakeholder- & Management-Beratung", fr:"Conseil aux parties prenantes & direction", es:"Asesoría a stakeholders y dirección" },
-        { en:"Insight-to-Action & Strategic Recommendations", de:"Insights → Handlung & Empfehlungen", fr:"Insights → action & recommandations", es:"Insights → acción y recomendaciones" },
-        { en:"Customer Experience & User-Centered Research", de:"Customer Experience & nutzerzentrierte Forschung", fr:"Expérience client & recherche centrée utilisateur", es:"Customer experience e investigación centrada en usuario" },
-        { en:"Research Quality Management & Governance", de:"Qualitätsmanagement & Governance", fr:"Qualité & gouvernance de recherche", es:"Gestión de calidad y gobernanza de investigación" },
-        { en:"Workshop Facilitation & Executive Presentations", de:"Workshop-Moderation & Executive-Präsentationen", fr:"Animation d’ateliers & présentations exécutives", es:"Facilitación de talleres y presentaciones ejecutivas" },
-        { en:"Team Leadership & Capability Building", de:"Teamführung & Kompetenzaufbau", fr:"Leadership & développement des compétences", es:"Liderazgo y desarrollo de capacidades" }
-      ],
-
-      languages: [
-        { en:"German (native)", de:"Deutsch (Muttersprache)", fr:"Allemand (langue maternelle)", es:"Alemán (nativo)" },
-        { en:"English (C2)", de:"Englisch (C2)", fr:"Anglais (C2)", es:"Inglés (C2)" },
-        { en:"French (C1)", de:"Französisch (C1)", fr:"Français (C1)", es:"Francés (C1)" },
-        { en:"Spanish (C1)", de:"Spanisch (C1)", fr:"Espagnol (C1)", es:"Español (C1)" }
-      ],
-
-      experience: [
-        {
-          org: "intervista AG, Zurich",
-          role: {
-            en:"Senior Project Manager Market Research (since July 2024, 80%)",
-            de:"Senior Project Manager Markt- und Meinungsforschung (seit Juli 2024, 80%)",
-            fr:"Senior Project Manager études de marché (depuis juil. 2024, 80%)",
-            es:"Senior Project Manager investigación de mercado (desde jul. 2024, 80%)"
-          },
-          period: "Project Manager Market Research (July 2022 – June 2024, 80–100%)",
-          when: { start: "2024-07", end: "" },
-          bullets: [
-            { en:"Lead complex qualitative, quantitative, and mixed-methods research programs across different industries",
-              de:"Leitung komplexer qualitativer, quantitativer und Mixed-Methods-Studien über verschiedene Branchen",
-              fr:"Pilotage de programmes de recherche qualitatifs, quantitatifs et mixtes multi-secteurs",
-              es:"Liderazgo de programas cualitativos, cuantitativos y de métodos mixtos en múltiples industrias" }
-          ]
-        }
-      ],
-
-      education: [
-        { title:{en:"PhD in Psychology, University of Zurich", de:"PhD Psychologie, Universität Zürich", fr:"Doctorat en psychologie, Université de Zurich", es:"Doctorado en psicología, Universidad de Zúrich"},
-          detail:{en:"Doctor of Philosophy (PhD), magna cum laude", de:"Doctor of Philosophy (PhD), magna cum laude", fr:"Doctorat (PhD), magna cum laude", es:"Doctorado (PhD), magna cum laude"},
-          period:"2018 – 2021"
-        }
-      ],
-
-      methodsTools: [
-        { heading:{en:"Research methods — Qualitative", de:"Forschungsmethoden — Qualitativ", fr:"Méthodes — Qualitatif", es:"Métodos — Cualitativo"},
-          items:["In-depth interviews","Usability testing","Ethnographic / observational studies","Workshops","MAXQDA"]
-        }
-      ],
-
-      i18n: {
-        en: { profile:"Profile", competencies:"Core competencies", experience:"Professional experience", education:"Education", methods:"Methods & tools", languages:"Languages",
-              searchPlaceholder:"Search…", prev:"Prev", next:"Next", copyOk:"Email copied to clipboard.", noResults:"No results", portrait:"Portrait" },
-        de: { profile:"Profil", competencies:"Kernkompetenzen", experience:"Berufserfahrung", education:"Ausbildung", methods:"Methoden & Tools", languages:"Sprachen",
-              searchPlaceholder:"Suchen…", prev:"Zurück", next:"Weiter", copyOk:"E-Mail in die Zwischenablage kopiert.", noResults:"Keine Treffer", portrait:"Porträt" },
-        fr: { profile:"Profil", competencies:"Compétences clés", experience:"Expérience professionnelle", education:"Formation", methods:"Méthodes & outils", languages:"Langues",
-              searchPlaceholder:"Rechercher…", prev:"Précédent", next:"Suivant", copyOk:"E-mail copié dans le presse-papiers.", noResults:"Aucun résultat", portrait:"Portrait" },
-        es: { profile:"Perfil", competencies:"Competencias clave", experience:"Experiencia profesional", education:"Educación", methods:"Métodos y herramientas", languages:"Idiomas",
-              searchPlaceholder:"Buscar…", prev:"Anterior", next:"Siguiente", copyOk:"Correo copiado al portapapeles.", noResults:"Sin resultados", portrait:"Retrato" }
-      }
     };
 
     const LANGS = ["en","de","fr","es"];
 
     function getStored(key, fallback){
-      try{ return localStorage.getItem(key) || fallback; }catch{ return fallback; }
+        try{ return localStorage.getItem(key) || fallback; }catch{ return fallback; }
     }
     function setStored(key, value){
-      try{ localStorage.setItem(key, value); }catch{}
+        try{ localStorage.setItem(key, value); }catch{}
     }
     function t(lang, key){
-      return (cvData.i18n?.[lang]?.[key]) ?? (cvData.i18n?.en?.[key]) ?? key;
+        return (cvData.i18n?.[lang]?.[key]) ?? (cvData.i18n?.en?.[key]) ?? key;
     }
     function pick(v, lang){
-      if (v == null) return "";
-      if (typeof v === "string") return v;
-      if (typeof v === "object") return v[lang] ?? v.en ?? Object.values(v)[0] ?? "";
-      return String(v);
+        if (v == null) return "";
+        if (typeof v === "string") return v;
+        if (typeof v === "object") return v[lang] ?? v.en ?? Object.values(v)[0] ?? "";
+        return String(v);
     }
     function safeTel(phone){
-      return "tel:" + String(phone || "").replace(/[^\d+]/g,"");
+        return "tel:" + String(phone || "").replace(/[^\d+]/g,"");
     }
     function monthLabel(yyyyMm){
-      if (!yyyyMm) return "";
-      const [y,m] = yyyyMm.split("-");
-      const mm = Number(m || "1");
-      const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-      return (months[mm-1] || "—") + " " + y;
+        if (!yyyyMm) return "";
+        const [y,m] = yyyyMm.split("-");
+        const mm = Number(m || "1");
+        const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        return (months[mm-1] || "—") + " " + y;
     }
     function yearFromPeriodText(text){
-      const m = String(text||"").match(/(19|20)\d{2}/);
-      return m ? m[0] : "";
+        const m = String(text||"").match(/(19|20)\d{2}/);
+        return m ? m[0] : "";
     }
     function setText(id, value){
-      const el = document.getElementById(id);
-      if (el) el.textContent = value ?? "";
+        const el = document.getElementById(id);
+        if (el) el.textContent = value ?? "";
     }
 
     /* Theme: single toggle light/dark */
     function systemPrefersLight(){
-      return window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+        return window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
     }
     function applyTheme(theme){
-      document.documentElement.setAttribute("data-theme", theme);
-      document.getElementById("themeLabel").textContent = theme === "light" ? "Light" : "Dark";
-      setStored("cv.theme", theme);
+        document.documentElement.setAttribute("data-theme", theme);
+        document.getElementById("themeLabel").textContent = theme === "light" ? "Light" : "Dark";
+        setStored("cv.theme", theme);
     }
     function initTheme(){
-      const stored = getStored("cv.theme", "");
-      if (stored === "light" || stored === "dark") return applyTheme(stored);
-      applyTheme(systemPrefersLight() ? "light" : "dark");
+        const stored = getStored("cv.theme", "");
+        if (stored === "light" || stored === "dark") return applyTheme(stored);
+        applyTheme(systemPrefersLight() ? "light" : "dark");
     }
 
     /* Language dropdown */
@@ -972,313 +1156,313 @@
     if (!LANGS.includes(currentLang)) currentLang = "en";
 
     function buildLangMenu(){
-      const menu = document.getElementById("langMenu");
-      menu.innerHTML = "";
-      const labels = { en:"English", de:"Deutsch", fr:"Français", es:"Español" };
-      LANGS.forEach(code => {
-        const btn = document.createElement("button");
-        btn.type = "button";
-        btn.role = "menuitem";
-        btn.textContent = (code === currentLang ? "✓ " : "") + labels[code];
-        btn.addEventListener("click", () => {
-          toggleLangMenu(false);
-          applyLang(code);
+        const menu = document.getElementById("langMenu");
+        menu.innerHTML = "";
+        const labels = { en:"English", de:"Deutsch", fr:"Français", es:"Español" };
+        LANGS.forEach(code => {
+            const btn = document.createElement("button");
+            btn.type = "button";
+            btn.role = "menuitem";
+            btn.textContent = (code === currentLang ? "✓ " : "") + labels[code];
+            btn.addEventListener("click", () => {
+                toggleLangMenu(false);
+                applyLang(code);
+            });
+            menu.appendChild(btn);
         });
-        menu.appendChild(btn);
-      });
     }
     function toggleLangMenu(open){
-      const btn = document.getElementById("btnLang");
-      const menu = document.getElementById("langMenu");
-      const isOpen = open ?? (btn.getAttribute("aria-expanded") !== "true");
-      btn.setAttribute("aria-expanded", String(isOpen));
-      menu.setAttribute("aria-hidden", String(!isOpen));
-      if (isOpen) buildLangMenu();
+        const btn = document.getElementById("btnLang");
+        const menu = document.getElementById("langMenu");
+        const isOpen = open ?? (btn.getAttribute("aria-expanded") !== "true");
+        btn.setAttribute("aria-expanded", String(isOpen));
+        menu.setAttribute("aria-hidden", String(!isOpen));
+        if (isOpen) buildLangMenu();
     }
 
     document.getElementById("btnLang").addEventListener("click", () => toggleLangMenu());
     document.addEventListener("click", (e) => {
-      const wrap = document.getElementById("btnLang").closest(".dropdown");
-      if (!wrap.contains(e.target)) toggleLangMenu(false);
+        const wrap = document.getElementById("btnLang").closest(".dropdown");
+        if (!wrap.contains(e.target)) toggleLangMenu(false);
     });
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") toggleLangMenu(false);
+        if (e.key === "Escape") toggleLangMenu(false);
     });
 
     function applyLang(lang){
-      if (!LANGS.includes(lang)) lang = "en";
-      currentLang = lang;
-      setStored("cv.lang", lang);
-      setText("langLabel", lang.toUpperCase());
-      renderCV(lang);
-      buildSearchIndex();
+        if (!LANGS.includes(lang)) lang = "en";
+        currentLang = lang;
+        setStored("cv.lang", lang);
+        setText("langLabel", lang.toUpperCase());
+        renderCV(lang);
+        buildSearchIndex();
     }
 
     /* Mobile hamburger */
     const btnMenu = document.getElementById("btnMenu");
     const drawer = document.getElementById("mobileDrawer");
     function toggleDrawer(force){
-      const isOpen = !drawer.hidden;
-      const next = (force != null) ? force : !isOpen;
-      drawer.hidden = !next;
-      btnMenu.setAttribute("aria-expanded", String(next));
-      drawer.style.display = next ? "block" : "none";
+        const isOpen = !drawer.hidden;
+        const next = (force != null) ? force : !isOpen;
+        drawer.hidden = !next;
+        btnMenu.setAttribute("aria-expanded", String(next));
+        drawer.style.display = next ? "block" : "none";
     }
     btnMenu.addEventListener("click", () => toggleDrawer());
     drawer.addEventListener("click", (e) => {
-      if (e.target.tagName === "A") toggleDrawer(false);
+        if (e.target.tagName === "A") toggleDrawer(false);
     });
 
     function renderCV(lang){
-      document.documentElement.lang = lang;
+        document.documentElement.lang = lang;
 
-      setText("brandTitle", cvData.person.name);
-      setText("cvName", cvData.person.name);
-      setText("cvHeadline", pick(cvData.person.headline, lang));
-      setText("cvNationality", pick(cvData.person.nationality, lang));
-      setText("cvDob", pick(cvData.person.dob, lang));
+        setText("brandTitle", cvData.person.name);
+        setText("cvName", cvData.person.name);
+        setText("cvHeadline", pick(cvData.person.headline, lang));
+        setText("cvNationality", pick(cvData.person.nationality, lang));
+        setText("cvDob", pick(cvData.person.dob, lang));
 
-      // Portrait
-      const img = document.getElementById("portraitImg");
-      const hint = document.getElementById("portraitHint");
-      const src = cvData.person.portrait?.src || "";
-      if (src){
-        img.src = src;
-        img.alt = pick(cvData.person.portrait?.alt, lang) || "";
-        img.style.display = "block";
-        hint.style.display = "none";
-      }else{
-        img.src = "";
-        img.alt = "";
-        img.style.display = "none";
-        hint.style.display = "block";
-        hint.textContent = t(lang,"portrait");
-      }
+        // Portrait
+        const img = document.getElementById("portraitImg");
+        const hint = document.getElementById("portraitHint");
+        const src = cvData.person.portrait?.src || "";
+        if (src){
+            img.src = src;
+            img.alt = pick(cvData.person.portrait?.alt, lang) || "";
+            img.style.display = "block";
+            hint.style.display = "none";
+        }else{
+            img.src = "";
+            img.alt = "";
+            img.style.display = "none";
+            hint.style.display = "block";
+            hint.textContent = t(lang,"portrait");
+        }
 
-      // Footer only (phone + email)
-      setText("footName", cvData.person.name);
-      const footEmail = document.getElementById("footEmail");
-      footEmail.textContent = cvData.person.email;
-      footEmail.href = "mailto:" + cvData.person.email;
+        // Footer only (phone + email)
+        setText("footName", cvData.person.name);
+        const footEmail = document.getElementById("footEmail");
+        footEmail.textContent = cvData.person.email;
+        footEmail.href = "mailto:" + cvData.person.email;
 
-      const footPhone = document.getElementById("footPhone");
-      footPhone.textContent = cvData.person.phone;
-      footPhone.href = safeTel(cvData.person.phone);
+        const footPhone = document.getElementById("footPhone");
+        footPhone.textContent = cvData.person.phone;
+        footPhone.href = safeTel(cvData.person.phone);
 
-      setText("footYear", String(new Date().getFullYear()));
+        setText("footYear", String(new Date().getFullYear()));
 
-      // Nav labels
-      setText("navProfile", t(lang,"profile"));
-      setText("navCompetencies", t(lang,"competencies"));
-      setText("navExperience", t(lang,"experience"));
-      setText("navEducation", t(lang,"education"));
-      setText("navMethods", t(lang,"methods"));
+        // Nav labels
+        setText("navProfile", t(lang,"profile"));
+        setText("navCompetencies", t(lang,"competencies"));
+        setText("navExperience", t(lang,"experience"));
+        setText("navEducation", t(lang,"education"));
+        setText("navMethods", t(lang,"methods"));
 
-      // Headings
-      setText("hProfile", t(lang,"profile"));
-      setText("hCompetencies", t(lang,"competencies"));
-      setText("hExperience", t(lang,"experience"));
-      setText("hEducation", t(lang,"education"));
-      setText("hMethods", t(lang,"methods"));
-      setText("hLanguages", t(lang,"languages"));
+        // Headings
+        setText("hProfile", t(lang,"profile"));
+        setText("hCompetencies", t(lang,"competencies"));
+        setText("hExperience", t(lang,"experience"));
+        setText("hEducation", t(lang,"education"));
+        setText("hMethods", t(lang,"methods"));
+        setText("hLanguages", t(lang,"languages"));
 
-      // Search UI text
-      document.getElementById("q").placeholder = t(lang,"searchPlaceholder");
-      document.querySelector(".btnPrevText").textContent = t(lang,"prev");
-      document.querySelector(".btnNextText").textContent = t(lang,"next");
+        // Search UI text
+        document.getElementById("q").placeholder = t(lang,"searchPlaceholder");
+        document.querySelector(".btnPrevText").textContent = t(lang,"prev");
+        document.querySelector(".btnNextText").textContent = t(lang,"next");
 
-      // Profile
-      setText("cvProfile", pick(cvData.profile, lang));
+        // Profile
+        setText("cvProfile", pick(cvData.profile, lang));
 
-      // Competencies
-      const comp = document.getElementById("cvCompetencies");
-      comp.innerHTML = "";
-      cvData.competencies.forEach(c => {
-        const s = document.createElement("span");
-        s.className = "chip";
-        s.textContent = pick(c, lang);
-        comp.appendChild(s);
-      });
-
-      // Languages
-      const langs = document.getElementById("cvLanguages");
-      langs.innerHTML = "";
-      cvData.languages.forEach(l => {
-        const s = document.createElement("span");
-        s.className = "chip";
-        s.textContent = pick(l, lang);
-        langs.appendChild(s);
-      });
-
-      // Experience (timeline dots)
-      const exp = document.getElementById("cvExperience");
-      exp.innerHTML = "";
-      cvData.experience.forEach((job, idx) => {
-        const wrap = document.createElement("div");
-        wrap.className = "item";
-        wrap.setAttribute("data-search","true");
-
-        const card = document.createElement("article");
-        card.className = "item-card";
-
-        const tl = document.createElement("div");
-        tl.className = "timeline";
-
-        const tcol = document.createElement("div");
-        tcol.className = "tcol";
-
-        const dot = document.createElement("div");
-        dot.className = "tDot " + (idx % 3 === 1 ? "b" : idx % 3 === 2 ? "c" : "a");
-        dot.setAttribute("data-dot","true");
-        tcol.appendChild(dot);
-
-        const stamp = document.createElement("div");
-        stamp.className = "tstamp";
-        const stampText = job.when?.start ? monthLabel(job.when.start) : (yearFromPeriodText(job.period) || "");
-        stamp.textContent = stampText || "—";
-        tcol.appendChild(stamp);
-
-        const body = document.createElement("div");
-
-        const head = document.createElement("div");
-        head.className = "item-head";
-
-        const left = document.createElement("div");
-        const role = document.createElement("div");
-        role.className = "role";
-        role.textContent = pick(job.role, lang);
-
-        const org = document.createElement("div");
-        org.className = "org";
-        org.textContent = job.org;
-
-        left.appendChild(role);
-        left.appendChild(org);
-
-        const right = document.createElement("div");
-        right.className = "when";
-        right.textContent = job.period || "";
-
-        head.appendChild(left);
-        head.appendChild(right);
-
-        const ul = document.createElement("ul");
-        ul.className = "bullets";
-        (job.bullets || []).forEach(b => {
-          const li = document.createElement("li");
-          li.textContent = pick(b, lang);
-          ul.appendChild(li);
+        // Competencies
+        const comp = document.getElementById("cvCompetencies");
+        comp.innerHTML = "";
+        cvData.competencies.forEach(c => {
+            const s = document.createElement("span");
+            s.className = "chip";
+            s.textContent = pick(c, lang);
+            comp.appendChild(s);
         });
 
-        body.appendChild(head);
-        body.appendChild(ul);
-
-        tl.appendChild(tcol);
-        tl.appendChild(body);
-
-        card.appendChild(tl);
-        wrap.appendChild(card);
-        exp.appendChild(wrap);
-      });
-
-      // Education
-      const edu = document.getElementById("cvEducation");
-      edu.innerHTML = "";
-      cvData.education.forEach((e) => {
-        const wrap = document.createElement("div");
-        wrap.className = "item";
-        wrap.setAttribute("data-search","true");
-
-        const card = document.createElement("article");
-        card.className = "item-card";
-
-        const head = document.createElement("div");
-        head.className = "item-head";
-
-        const left = document.createElement("div");
-        const title = document.createElement("div");
-        title.className = "role";
-        title.textContent = pick(e.title, lang);
-
-        const detailVal = pick(e.detail, lang);
-        const detail = document.createElement("div");
-        detail.className = "org";
-        detail.textContent = detailVal;
-
-        left.appendChild(title);
-        if (detailVal) left.appendChild(detail);
-
-        const right = document.createElement("div");
-        right.className = "when";
-        right.textContent = e.period || "";
-
-        head.appendChild(left);
-        head.appendChild(right);
-
-        card.appendChild(head);
-        wrap.appendChild(card);
-        edu.appendChild(wrap);
-      });
-
-      // Methods
-      const mt = document.getElementById("cvMethods");
-      mt.innerHTML = "";
-      cvData.methodsTools.forEach((block) => {
-        const wrap = document.createElement("div");
-        wrap.className = "item";
-        wrap.setAttribute("data-search","true");
-
-        const card = document.createElement("article");
-        card.className = "item-card";
-
-        const heading = document.createElement("div");
-        heading.className = "role";
-        heading.textContent = pick(block.heading, lang);
-
-        const ul = document.createElement("ul");
-        ul.className = "bullets";
-        block.items.forEach(v => {
-          const li = document.createElement("li");
-          li.textContent = v;
-          ul.appendChild(li);
+        // Languages
+        const langs = document.getElementById("cvLanguages");
+        langs.innerHTML = "";
+        cvData.languages.forEach(l => {
+            const s = document.createElement("span");
+            s.className = "chip";
+            s.textContent = pick(l, lang);
+            langs.appendChild(s);
         });
 
-        card.appendChild(heading);
-        card.appendChild(ul);
-        wrap.appendChild(card);
-        mt.appendChild(wrap);
-      });
+        // Experience (timeline dots)
+        const exp = document.getElementById("cvExperience");
+        exp.innerHTML = "";
+        cvData.experience.forEach((job, idx) => {
+            const wrap = document.createElement("div");
+            wrap.className = "item";
+            wrap.setAttribute("data-search","true");
 
-      refreshTimelineDots();
+            const card = document.createElement("article");
+            card.className = "item-card";
+
+            const tl = document.createElement("div");
+            tl.className = "timeline";
+
+            const tcol = document.createElement("div");
+            tcol.className = "tcol";
+
+            const dot = document.createElement("div");
+            dot.className = "tDot " + (idx % 3 === 1 ? "b" : idx % 3 === 2 ? "c" : "a");
+            dot.setAttribute("data-dot","true");
+            tcol.appendChild(dot);
+
+            const stamp = document.createElement("div");
+            stamp.className = "tstamp";
+            const stampText = job.when?.start ? monthLabel(job.when.start) : (yearFromPeriodText(job.period) || "");
+            stamp.textContent = stampText || "—";
+            tcol.appendChild(stamp);
+
+            const body = document.createElement("div");
+
+            const head = document.createElement("div");
+            head.className = "item-head";
+
+            const left = document.createElement("div");
+            const role = document.createElement("div");
+            role.className = "role";
+            role.textContent = pick(job.role, lang);
+
+            const org = document.createElement("div");
+            org.className = "org";
+            org.textContent = job.org;
+
+            left.appendChild(role);
+            left.appendChild(org);
+
+            const right = document.createElement("div");
+            right.className = "when";
+            right.textContent = job.period || "";
+
+            head.appendChild(left);
+            head.appendChild(right);
+
+            const ul = document.createElement("ul");
+            ul.className = "bullets";
+            (job.bullets || []).forEach(b => {
+                const li = document.createElement("li");
+                li.textContent = pick(b, lang);
+                ul.appendChild(li);
+            });
+
+            body.appendChild(head);
+            body.appendChild(ul);
+
+            tl.appendChild(tcol);
+            tl.appendChild(body);
+
+            card.appendChild(tl);
+            wrap.appendChild(card);
+            exp.appendChild(wrap);
+        });
+
+        // Education
+        const edu = document.getElementById("cvEducation");
+        edu.innerHTML = "";
+        cvData.education.forEach((e) => {
+            const wrap = document.createElement("div");
+            wrap.className = "item";
+            wrap.setAttribute("data-search","true");
+
+            const card = document.createElement("article");
+            card.className = "item-card";
+
+            const head = document.createElement("div");
+            head.className = "item-head";
+
+            const left = document.createElement("div");
+            const title = document.createElement("div");
+            title.className = "role";
+            title.textContent = pick(e.title, lang);
+
+            const detailVal = pick(e.detail, lang);
+            const detail = document.createElement("div");
+            detail.className = "org";
+            detail.textContent = detailVal;
+
+            left.appendChild(title);
+            if (detailVal) left.appendChild(detail);
+
+            const right = document.createElement("div");
+            right.className = "when";
+            right.textContent = e.period || "";
+
+            head.appendChild(left);
+            head.appendChild(right);
+
+            card.appendChild(head);
+            wrap.appendChild(card);
+            edu.appendChild(wrap);
+        });
+
+        // Methods
+        const mt = document.getElementById("cvMethods");
+        mt.innerHTML = "";
+        cvData.methodsTools.forEach((block) => {
+            const wrap = document.createElement("div");
+            wrap.className = "item";
+            wrap.setAttribute("data-search","true");
+
+            const card = document.createElement("article");
+            card.className = "item-card";
+
+            const heading = document.createElement("div");
+            heading.className = "role";
+            heading.textContent = pick(block.heading, lang);
+
+            const ul = document.createElement("ul");
+            ul.className = "bullets";
+            block.items.forEach(v => {
+                const li = document.createElement("li");
+                li.textContent = v;
+                ul.appendChild(li);
+            });
+
+            card.appendChild(heading);
+            card.appendChild(ul);
+            wrap.appendChild(card);
+            mt.appendChild(wrap);
+        });
+
+        refreshTimelineDots();
     }
 
     /* Copy/Print/Theme/Top */
     document.getElementById("btnPrint").addEventListener("click", () => window.print());
 
     document.getElementById("btnCopy").addEventListener("click", async () => {
-      const status = document.getElementById("liveStatus");
-      try{
-        await navigator.clipboard.writeText(cvData.person.email);
-        status.textContent = t(currentLang,"copyOk");
-      }catch{
-        const tmp = document.createElement("input");
-        tmp.value = cvData.person.email;
-        document.body.appendChild(tmp);
-        tmp.select();
-        document.execCommand("copy");
-        tmp.remove();
-        status.textContent = t(currentLang,"copyOk");
-      }
-      setTimeout(() => status.textContent = "", 2000);
+        const status = document.getElementById("liveStatus");
+        try{
+            await navigator.clipboard.writeText(cvData.person.email);
+            status.textContent = t(currentLang,"copyOk");
+        }catch{
+            const tmp = document.createElement("input");
+            tmp.value = cvData.person.email;
+            document.body.appendChild(tmp);
+            tmp.select();
+            document.execCommand("copy");
+            tmp.remove();
+            status.textContent = t(currentLang,"copyOk");
+        }
+        setTimeout(() => status.textContent = "", 2000);
     });
 
     document.getElementById("btnTheme").addEventListener("click", () => {
-      const cur = document.documentElement.getAttribute("data-theme") || "dark";
-      applyTheme(cur === "light" ? "dark" : "light");
+        const cur = document.documentElement.getAttribute("data-theme") || "dark";
+        applyTheme(cur === "light" ? "dark" : "light");
     });
 
     document.getElementById("btnTop").addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
     /* Search engine */
@@ -1289,176 +1473,176 @@
     function normalizeText(s){ return String(s || "").toLowerCase(); }
 
     function clearHighlights(){
-      document.querySelectorAll("mark").forEach(m => m.replaceWith(document.createTextNode(m.textContent)));
+        document.querySelectorAll("mark").forEach(m => m.replaceWith(document.createTextNode(m.textContent)));
     }
 
     function buildSearchIndex(){
-      clearHighlights();
-      searchIndex = [];
-      const nodes = [
-        document.getElementById("cvProfile"),
-        ...Array.from(document.querySelectorAll("[data-search='true']")),
-        ...Array.from(document.querySelectorAll(".chip")),
-        document.getElementById("cvName"),
-        document.getElementById("cvHeadline")
-      ].filter(Boolean);
+        clearHighlights();
+        searchIndex = [];
+        const nodes = [
+            document.getElementById("cvProfile"),
+            ...Array.from(document.querySelectorAll("[data-search='true']")),
+            ...Array.from(document.querySelectorAll(".chip")),
+            document.getElementById("cvName"),
+            document.getElementById("cvHeadline")
+        ].filter(Boolean);
 
-      nodes.forEach((node, i) => {
-        const text = node.innerText || node.textContent || "";
-        searchIndex.push({ node, text, hay: normalizeText(text), i });
-      });
+        nodes.forEach((node, i) => {
+            const text = node.innerText || node.textContent || "";
+            searchIndex.push({ node, text, hay: normalizeText(text), i });
+        });
     }
 
     function highlightFirstPerNode(term){
-      clearHighlights();
-      const t = term.trim();
-      if (!t) return;
+        clearHighlights();
+        const t = term.trim();
+        if (!t) return;
 
-      const tl = t.toLowerCase();
-      const root = document.getElementById("main");
+        const tl = t.toLowerCase();
+        const root = document.getElementById("main");
 
-      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-        acceptNode: (n) => {
-          if (!n.nodeValue) return NodeFilter.FILTER_REJECT;
-          const v = n.nodeValue.toLowerCase();
-          if (!v.includes(tl)) return NodeFilter.FILTER_REJECT;
-          const p = n.parentElement;
-          if (!p) return NodeFilter.FILTER_REJECT;
-          const tag = p.tagName.toLowerCase();
-          if (tag === "script" || tag === "style") return NodeFilter.FILTER_REJECT;
-          return NodeFilter.FILTER_ACCEPT;
-        }
-      });
+        const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+            acceptNode: (n) => {
+                if (!n.nodeValue) return NodeFilter.FILTER_REJECT;
+                const v = n.nodeValue.toLowerCase();
+                if (!v.includes(tl)) return NodeFilter.FILTER_REJECT;
+                const p = n.parentElement;
+                if (!p) return NodeFilter.FILTER_REJECT;
+                const tag = p.tagName.toLowerCase();
+                if (tag === "script" || tag === "style") return NodeFilter.FILTER_REJECT;
+                return NodeFilter.FILTER_ACCEPT;
+            }
+        });
 
-      const textNodes = [];
-      while (walker.nextNode()) textNodes.push(walker.currentNode);
+        const textNodes = [];
+        while (walker.nextNode()) textNodes.push(walker.currentNode);
 
-      textNodes.forEach(n => {
-        const s = n.nodeValue;
-        const idx = s.toLowerCase().indexOf(tl);
-        if (idx < 0) return;
-        const before = document.createTextNode(s.slice(0, idx));
-        const mark = document.createElement("mark");
-        mark.textContent = s.slice(idx, idx + t.length);
-        const after = document.createTextNode(s.slice(idx + t.length));
+        textNodes.forEach(n => {
+            const s = n.nodeValue;
+            const idx = s.toLowerCase().indexOf(tl);
+            if (idx < 0) return;
+            const before = document.createTextNode(s.slice(0, idx));
+            const mark = document.createElement("mark");
+            mark.textContent = s.slice(idx, idx + t.length);
+            const after = document.createTextNode(s.slice(idx + t.length));
 
-        const frag = document.createDocumentFragment();
-        frag.appendChild(before);
-        frag.appendChild(mark);
-        frag.appendChild(after);
-        n.replaceWith(frag);
-      });
+            const frag = document.createDocumentFragment();
+            frag.appendChild(before);
+            frag.appendChild(mark);
+            frag.appendChild(after);
+            n.replaceWith(frag);
+        });
     }
 
     function buildMatches(term){
-      matches = [];
-      activeMatch = -1;
+        matches = [];
+        activeMatch = -1;
 
-      const q = normalizeText(term).trim();
-      if (!q) return;
+        const q = normalizeText(term).trim();
+        if (!q) return;
 
-      searchIndex.forEach(entry => {
-        if (entry.hay.includes(q)){
-          const target = entry.node.closest("section.panel, article.item-card, header.hero") || entry.node;
-          const title =
-            target.querySelector?.(".role")?.textContent ||
-            target.querySelector?.("h2")?.textContent ||
-            target.id ||
-            "Match";
-          const snippet = (entry.text || "").trim().replace(/\s+/g," ").slice(0, 130);
-          matches.push({ target, title, snippet });
-        }
-      });
+        searchIndex.forEach(entry => {
+            if (entry.hay.includes(q)){
+                const target = entry.node.closest("section.panel, article.item-card, header.hero") || entry.node;
+                const title =
+                    target.querySelector?.(".role")?.textContent ||
+                    target.querySelector?.("h2")?.textContent ||
+                    target.id ||
+                    "Match";
+                const snippet = (entry.text || "").trim().replace(/\s+/g," ").slice(0, 130);
+                matches.push({ target, title, snippet });
+            }
+        });
 
-      const seen = new Set();
-      matches = matches.filter(m => {
-        if (seen.has(m.target)) return false;
-        seen.add(m.target);
-        return true;
-      });
+        const seen = new Set();
+        matches = matches.filter(m => {
+            if (seen.has(m.target)) return false;
+            seen.add(m.target);
+            return true;
+        });
     }
 
     function escapeHtml(s){
-      return String(s || "")
-        .replaceAll("&","&amp;")
-        .replaceAll("<","&lt;")
-        .replaceAll(">","&gt;")
-        .replaceAll('"',"&quot;")
-        .replaceAll("'","&#039;");
+        return String(s || "")
+            .replaceAll("&","&amp;")
+            .replaceAll("<","&lt;")
+            .replaceAll(">","&gt;")
+            .replaceAll('"',"&quot;")
+            .replaceAll("'","&#039;");
     }
 
     function renderResultsPanel(term){
-      const panel = document.getElementById("results");
-      panel.innerHTML = "";
+        const panel = document.getElementById("results");
+        panel.innerHTML = "";
 
-      if (!term.trim()){
-        panel.setAttribute("aria-hidden","true");
-        return;
-      }
+        if (!term.trim()){
+            panel.setAttribute("aria-hidden","true");
+            return;
+        }
 
-      if (!matches.length){
-        const div = document.createElement("div");
-        div.className = "result";
-        div.innerHTML = `<div class="r-title">${escapeHtml(t(currentLang,"noResults"))}</div>`;
-        panel.appendChild(div);
-        panel.setAttribute("aria-hidden","false");
-        return;
-      }
+        if (!matches.length){
+            const div = document.createElement("div");
+            div.className = "result";
+            div.innerHTML = `<div class="r-title">${escapeHtml(t(currentLang,"noResults"))}</div>`;
+            panel.appendChild(div);
+            panel.setAttribute("aria-hidden","false");
+            return;
+        }
 
-      matches.slice(0, 18).forEach((m, idx) => {
-        const div = document.createElement("div");
-        div.className = "result";
-        div.tabIndex = 0;
-        div.innerHTML = `
+        matches.slice(0, 18).forEach((m, idx) => {
+            const div = document.createElement("div");
+            div.className = "result";
+            div.tabIndex = 0;
+            div.innerHTML = `
           <div class="r-title">${escapeHtml(m.title)}</div>
           <div class="r-snippet">${escapeHtml(m.snippet)}</div>
         `;
-        div.addEventListener("click", () => jumpTo(idx));
-        div.addEventListener("keydown", (e) => {
-          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); jumpTo(idx); }
+            div.addEventListener("click", () => jumpTo(idx));
+            div.addEventListener("keydown", (e) => {
+                if (e.key === "Enter" || e.key === " ") { e.preventDefault(); jumpTo(idx); }
+            });
+            panel.appendChild(div);
         });
-        panel.appendChild(div);
-      });
 
-      panel.setAttribute("aria-hidden","false");
+        panel.setAttribute("aria-hidden","false");
     }
 
     function jumpTo(idx){
-      if (!matches.length) return;
-      activeMatch = ((idx % matches.length) + matches.length) % matches.length;
-      const m = matches[activeMatch];
-      m.target.scrollIntoView({ behavior: "smooth", block: "start" });
-      m.target.setAttribute("tabindex","-1");
-      m.target.focus({ preventScroll: true });
-      setTimeout(() => m.target.removeAttribute("tabindex"), 700);
+        if (!matches.length) return;
+        activeMatch = ((idx % matches.length) + matches.length) % matches.length;
+        const m = matches[activeMatch];
+        m.target.scrollIntoView({ behavior: "smooth", block: "start" });
+        m.target.setAttribute("tabindex","-1");
+        m.target.focus({ preventScroll: true });
+        setTimeout(() => m.target.removeAttribute("tabindex"), 700);
     }
     function nextMatch(){ if (matches.length) jumpTo(activeMatch + 1); }
     function prevMatch(){ if (matches.length) jumpTo(activeMatch - 1); }
 
     const qInput = document.getElementById("q");
     qInput.addEventListener("input", () => {
-      const term = qInput.value;
-      buildMatches(term);
-      renderResultsPanel(term);
-      highlightFirstPerNode(term);
+        const term = qInput.value;
+        buildMatches(term);
+        renderResultsPanel(term);
+        highlightFirstPerNode(term);
     });
     qInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter"){
-        e.preventDefault();
-        if (e.shiftKey) prevMatch();
-        else nextMatch();
-      }else if (e.key === "Escape"){
-        document.getElementById("results").setAttribute("aria-hidden","true");
-        qInput.blur();
-      }
+        if (e.key === "Enter"){
+            e.preventDefault();
+            if (e.shiftKey) prevMatch();
+            else nextMatch();
+        }else if (e.key === "Escape"){
+            document.getElementById("results").setAttribute("aria-hidden","true");
+            qInput.blur();
+        }
     });
     document.getElementById("btnNext").addEventListener("click", nextMatch);
     document.getElementById("btnPrev").addEventListener("click", prevMatch);
 
     document.addEventListener("click", (e) => {
-      const panel = document.getElementById("results");
-      const search = document.querySelector(".search");
-      if (!search.contains(e.target)) panel.setAttribute("aria-hidden","true");
+        const panel = document.getElementById("results");
+        const search = document.querySelector(".search");
+        if (!search.contains(e.target)) panel.setAttribute("aria-hidden","true");
     });
 
     /* Timeline dot motion */
@@ -1467,181 +1651,181 @@
     let dotTargets = [];
 
     function refreshTimelineDots(){
-      dotTargets = Array.from(document.querySelectorAll(".item-card")).map(card => {
-        const dot = card.querySelector("[data-dot='true']");
-        const col = card.querySelector(".tcol");
-        if (!dot || !col) return null;
-        return { card, dot, col };
-      }).filter(Boolean);
-      updateTimelineDots(true);
+        dotTargets = Array.from(document.querySelectorAll(".item-card")).map(card => {
+            const dot = card.querySelector("[data-dot='true']");
+            const col = card.querySelector(".tcol");
+            if (!dot || !col) return null;
+            return { card, dot, col };
+        }).filter(Boolean);
+        updateTimelineDots(true);
     }
 
     function clamp(v,min,max){ return Math.max(min, Math.min(max,v)); }
 
     function updateTimelineDots(){
-      const y = window.scrollY;
-      const dirNow = y > lastScrollY ? 1 : (y < lastScrollY ? -1 : scrollDir);
-      if (dirNow !== scrollDir) scrollDir = dirNow;
-      lastScrollY = y;
+        const y = window.scrollY;
+        const dirNow = y > lastScrollY ? 1 : (y < lastScrollY ? -1 : scrollDir);
+        if (dirNow !== scrollDir) scrollDir = dirNow;
+        lastScrollY = y;
 
-      const vh = window.innerHeight || 800;
+        const vh = window.innerHeight || 800;
 
-      for (const t of dotTargets){
-        const r = t.card.getBoundingClientRect();
-        const colH = Math.max(60, t.col.getBoundingClientRect().height);
-        const start = vh * 0.80;
-        const end = vh * 0.15;
-        const prog = clamp((start - r.top) / (start - end), 0, 1);
+        for (const t of dotTargets){
+            const r = t.card.getBoundingClientRect();
+            const colH = Math.max(60, t.col.getBoundingClientRect().height);
+            const start = vh * 0.80;
+            const end = vh * 0.15;
+            const prog = clamp((start - r.top) / (start - end), 0, 1);
 
-        const travel = colH - 22;
-        let pos = prog * travel;
-        pos += (scrollDir > 0 ? 6 : -6);
-        pos = clamp(pos, 0, travel);
-        t.dot.style.setProperty("--dotY", pos.toFixed(1) + "px");
-      }
+            const travel = colH - 22;
+            let pos = prog * travel;
+            pos += (scrollDir > 0 ? 6 : -6);
+            pos = clamp(pos, 0, travel);
+            t.dot.style.setProperty("--dotY", pos.toFixed(1) + "px");
+        }
     }
 
     window.addEventListener("scroll", () => {
-      updateTimelineDots();
-      const wrap = document.getElementById("toTopWrap");
-      if (window.scrollY > 520) wrap.classList.add("show");
-      else wrap.classList.remove("show");
+        updateTimelineDots();
+        const wrap = document.getElementById("toTopWrap");
+        if (window.scrollY > 520) wrap.classList.add("show");
+        else wrap.classList.remove("show");
     }, { passive:true });
 
     /* Network canvas (same behavior) */
     (function initNetwork(){
-      const canvas = document.getElementById("net");
-      if (!canvas) return;
-      const prefersReduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (prefersReduced) return;
+        const canvas = document.getElementById("net");
+        if (!canvas) return;
+        const prefersReduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (prefersReduced) return;
 
-      const ctx = canvas.getContext("2d", { alpha: true });
-      if (!ctx) return;
+        const ctx = canvas.getContext("2d", { alpha: true });
+        if (!ctx) return;
 
-      let w=0, h=0;
-      const dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
+        let w=0, h=0;
+        const dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
 
-      function resize(){
-        w = Math.floor(window.innerWidth);
-        h = Math.floor(window.innerHeight);
-        canvas.width = Math.floor(w * dpr);
-        canvas.height = Math.floor(h * dpr);
-        canvas.style.width = w + "px";
-        canvas.style.height = h + "px";
-        ctx.setTransform(dpr,0,0,dpr,0,0);
-      }
-      window.addEventListener("resize", resize, { passive:true });
-      resize();
+        function resize(){
+            w = Math.floor(window.innerWidth);
+            h = Math.floor(window.innerHeight);
+            canvas.width = Math.floor(w * dpr);
+            canvas.height = Math.floor(h * dpr);
+            canvas.style.width = w + "px";
+            canvas.style.height = h + "px";
+            ctx.setTransform(dpr,0,0,dpr,0,0);
+        }
+        window.addEventListener("resize", resize, { passive:true });
+        resize();
 
-      const pointer = { x: w*0.5, y: h*0.35, active:false };
-      window.addEventListener("pointermove", (e) => {
-        pointer.x = e.clientX; pointer.y = e.clientY; pointer.active = true;
-      }, { passive:true });
-      window.addEventListener("pointerleave", () => { pointer.active = false; }, { passive:true });
+        const pointer = { x: w*0.5, y: h*0.35, active:false };
+        window.addEventListener("pointermove", (e) => {
+            pointer.x = e.clientX; pointer.y = e.clientY; pointer.active = true;
+        }, { passive:true });
+        window.addEventListener("pointerleave", () => { pointer.active = false; }, { passive:true });
 
-      function rand(min,max){ return min + Math.random()*(max-min); }
+        function rand(min,max){ return min + Math.random()*(max-min); }
 
-      const count = Math.max(110, Math.min(240, Math.round(Math.sqrt(w*h)/38)));
-      const maxLink = 135;
-      const baseSpeed = 0.20;
-      const damping = 0.993;
+        const count = Math.max(110, Math.min(240, Math.round(Math.sqrt(w*h)/38)));
+        const maxLink = 135;
+        const baseSpeed = 0.20;
+        const damping = 0.993;
 
-      const pullRatio = 0.38;
-      const pullStrength = 0.020;
-      const repelNear = 20;
+        const pullRatio = 0.38;
+        const pullStrength = 0.020;
+        const repelNear = 20;
 
-      const pts = Array.from({length: count}, (_,i) => ({
-        x: rand(0,w),
-        y: rand(0,h),
-        vx: rand(-baseSpeed, baseSpeed),
-        vy: rand(-baseSpeed, baseSpeed),
-        pull: Math.random() < pullRatio,
-        tone: i % 3
-      }));
+        const pts = Array.from({length: count}, (_,i) => ({
+            x: rand(0,w),
+            y: rand(0,h),
+            vx: rand(-baseSpeed, baseSpeed),
+            vy: rand(-baseSpeed, baseSpeed),
+            pull: Math.random() < pullRatio,
+            tone: i % 3
+        }));
 
-      function isLightNow(){
-        return document.documentElement.getAttribute("data-theme") === "light";
-      }
-
-      function step(){
-        ctx.clearRect(0,0,w,h);
-
-        const light = isLightNow();
-        const linkBase = light ? 0.22 : 0.20;
-        const dotAlpha = light ? 0.42 : 0.40;
-
-        for (let i=0;i<pts.length;i++){
-          const a = pts[i];
-          for (let j=i+1;j<pts.length;j++){
-            const b = pts[j];
-            const dx = b.x - a.x;
-            const dy = b.y - a.y;
-            const dist = Math.hypot(dx,dy);
-            if (dist < maxLink){
-              const alpha = (1 - dist/maxLink) * linkBase;
-
-              let stroke = `rgba(59,130,246,${alpha})`;
-              if ((a.tone + b.tone) % 3 === 1) stroke = `rgba(20,184,166,${alpha * 0.95})`;
-              if ((a.tone + b.tone) % 3 === 2) stroke = `rgba(245,158,11,${alpha * 0.75})`;
-
-              ctx.beginPath();
-              ctx.moveTo(a.x,a.y);
-              ctx.lineTo(b.x,b.y);
-              ctx.strokeStyle = stroke;
-              ctx.lineWidth = 1;
-              ctx.stroke();
-            }
-          }
+        function isLightNow(){
+            return document.documentElement.getAttribute("data-theme") === "light";
         }
 
-        for (const p of pts){
-          if (pointer.active && p.pull){
-            const dx = pointer.x - p.x;
-            const dy = pointer.y - p.y;
-            const dist = Math.hypot(dx,dy) || 1;
+        function step(){
+            ctx.clearRect(0,0,w,h);
 
-            p.vx += (dx/dist) * pullStrength;
-            p.vy += (dy/dist) * pullStrength;
+            const light = isLightNow();
+            const linkBase = light ? 0.22 : 0.20;
+            const dotAlpha = light ? 0.42 : 0.40;
 
-            if (dist < repelNear){
-              p.vx -= (dx/dist) * (pullStrength * 1.7);
-              p.vy -= (dy/dist) * (pullStrength * 1.7);
+            for (let i=0;i<pts.length;i++){
+                const a = pts[i];
+                for (let j=i+1;j<pts.length;j++){
+                    const b = pts[j];
+                    const dx = b.x - a.x;
+                    const dy = b.y - a.y;
+                    const dist = Math.hypot(dx,dy);
+                    if (dist < maxLink){
+                        const alpha = (1 - dist/maxLink) * linkBase;
+
+                        let stroke = `rgba(59,130,246,${alpha})`;
+                        if ((a.tone + b.tone) % 3 === 1) stroke = `rgba(20,184,166,${alpha * 0.95})`;
+                        if ((a.tone + b.tone) % 3 === 2) stroke = `rgba(245,158,11,${alpha * 0.75})`;
+
+                        ctx.beginPath();
+                        ctx.moveTo(a.x,a.y);
+                        ctx.lineTo(b.x,b.y);
+                        ctx.strokeStyle = stroke;
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                    }
+                }
             }
-          }
 
-          p.x += p.vx; p.y += p.vy;
-          p.vx *= damping; p.vy *= damping;
+            for (const p of pts){
+                if (pointer.active && p.pull){
+                    const dx = pointer.x - p.x;
+                    const dy = pointer.y - p.y;
+                    const dist = Math.hypot(dx,dy) || 1;
 
-          if (p.x < -30) p.x = w + 30;
-          if (p.x > w + 30) p.x = -30;
-          if (p.y < -30) p.y = h + 30;
-          if (p.y > h + 30) p.y = -30;
+                    p.vx += (dx/dist) * pullStrength;
+                    p.vy += (dy/dist) * pullStrength;
 
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, 1.25, 0, Math.PI*2);
-          let fill = `rgba(120,150,190,${dotAlpha})`;
-          if (p.tone === 1) fill = `rgba(20,184,166,${dotAlpha})`;
-          if (p.tone === 2) fill = `rgba(245,158,11,${dotAlpha*0.85})`;
-          ctx.fillStyle = fill;
-          ctx.fill();
+                    if (dist < repelNear){
+                        p.vx -= (dx/dist) * (pullStrength * 1.7);
+                        p.vy -= (dy/dist) * (pullStrength * 1.7);
+                    }
+                }
+
+                p.x += p.vx; p.y += p.vy;
+                p.vx *= damping; p.vy *= damping;
+
+                if (p.x < -30) p.x = w + 30;
+                if (p.x > w + 30) p.x = -30;
+                if (p.y < -30) p.y = h + 30;
+                if (p.y > h + 30) p.y = -30;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 1.25, 0, Math.PI*2);
+                let fill = `rgba(120,150,190,${dotAlpha})`;
+                if (p.tone === 1) fill = `rgba(20,184,166,${dotAlpha})`;
+                if (p.tone === 2) fill = `rgba(245,158,11,${dotAlpha*0.85})`;
+                ctx.fillStyle = fill;
+                ctx.fill();
+            }
+
+            requestAnimationFrame(step);
         }
-
-        requestAnimationFrame(step);
-      }
-      step();
+        step();
     })();
 
     /* Init */
     initTheme();
     document.getElementById("btnTheme").addEventListener("click", () => {
-      const cur = document.documentElement.getAttribute("data-theme") || "dark";
-      applyTheme(cur === "light" ? "dark" : "light");
+        const cur = document.documentElement.getAttribute("data-theme") || "dark";
+        applyTheme(cur === "light" ? "dark" : "light");
     });
 
     applyLang(currentLang);
     buildSearchIndex();
 
     requestAnimationFrame(() => refreshTimelineDots());
-  </script>
+</script>
 </body>
 </html>
